@@ -1,0 +1,579 @@
+=== bootdiag3 2026-07-05T19:59:08+08:00 ===
+
+=== FAILING boot (Jul 5 19:27+): ALL kernel lines matching display pattern ===
+Jul  5 19:27:57 nknu kernel: [    0.000000] Machine model: NVIDIA Jetson Orin NX Engineering Reference Developer Kit Super
+Jul  5 19:27:57 nknu kernel: [    0.004986] CPU1: Booted secondary processor 0x0000000100 [0x410fd421]
+Jul  5 19:27:57 nknu kernel: [    0.005349] CPU2: Booted secondary processor 0x0000000200 [0x410fd421]
+Jul  5 19:27:57 nknu kernel: [    0.005676] CPU3: Booted secondary processor 0x0000000300 [0x410fd421]
+Jul  5 19:27:57 nknu kernel: [    0.008001] CPU4: Booted secondary processor 0x0000010000 [0x410fd421]
+Jul  5 19:27:57 nknu kernel: [    0.008378] CPU5: Booted secondary processor 0x0000010100 [0x410fd421]
+Jul  5 19:27:57 nknu kernel: [    0.008751] CPU6: Booted secondary processor 0x0000010200 [0x410fd421]
+Jul  5 19:27:57 nknu kernel: [    0.009207] CPU7: Booted secondary processor 0x0000010300 [0x410fd421]
+Jul  5 19:27:57 nknu kernel: [    0.009267] SMP: Total of 8 processors activated.
+Jul  5 19:27:57 nknu kernel: [    0.053147] DMI: NVIDIA NVIDIA Jetson Orin NX Engineering Reference Developer Kit Super/Jetson, BIOS 36.4.3-gcid-38968081 01/08/2025
+Jul  5 19:27:57 nknu kernel: [    1.728476] simple-framebuffer chosen:framebuffer: framebuffer at 0x47de00000, 0x1680000 bytes
+Jul  5 19:27:57 nknu kernel: [    1.728494] simple-framebuffer chosen:framebuffer: format=x8r8g8b8, mode=2560x1440x32, linelength=16384
+Jul  5 19:27:57 nknu kernel: [    1.745488] simple-framebuffer chosen:framebuffer: fb0: simplefb registered!
+Jul  5 19:27:57 nknu kernel: [    2.097942] host1x: loading out-of-tree module taints kernel.
+Jul  5 19:27:57 nknu kernel: [    2.108388] tegra-host1x 13e00000.host1x: Adding to iommu group 3
+Jul  5 19:27:57 nknu kernel: [    2.134225] host1x-context host1x-ctx.0: Adding to iommu group 4
+Jul  5 19:27:57 nknu kernel: [    2.152458] host1x-context host1x-ctx.1: Adding to iommu group 5
+Jul  5 19:27:57 nknu kernel: [    2.160136] host1x-context host1x-ctx.2: Adding to iommu group 6
+Jul  5 19:27:57 nknu kernel: [    2.160502] host1x-context host1x-ctx.3: Adding to iommu group 7
+Jul  5 19:27:57 nknu kernel: [    2.163461] host1x-context host1x-ctx.4: Adding to iommu group 9
+Jul  5 19:27:57 nknu kernel: [    2.163606] host1x-context host1x-ctx.5: Adding to iommu group 10
+Jul  5 19:27:57 nknu kernel: [    2.163739] host1x-context host1x-ctx.6: Adding to iommu group 11
+Jul  5 19:27:57 nknu kernel: [    2.163891] host1x-context host1x-ctx.7: Adding to iommu group 12
+Jul  5 19:27:57 nknu kernel: [    2.164002] host1x-context host1x-ctx.8: Adding to iommu group 13
+Jul  5 19:27:57 nknu kernel: [    2.164109] host1x-context host1x-ctx.9: Adding to iommu group 14
+Jul  5 19:27:57 nknu kernel: [    2.164211] host1x-context host1x-ctx.10: Adding to iommu group 15
+Jul  5 19:27:57 nknu kernel: [    2.164332] host1x-context host1x-ctx.11: Adding to iommu group 16
+Jul  5 19:27:57 nknu kernel: [    2.164538] host1x-context host1x-ctx.12: Adding to iommu group 17
+Jul  5 19:27:57 nknu kernel: [    2.164654] host1x-context host1x-ctx.13: Adding to iommu group 18
+Jul  5 19:27:57 nknu kernel: [    2.164768] host1x-context host1x-ctx.14: Adding to iommu group 19
+Jul  5 19:27:57 nknu kernel: [    2.164867] host1x-context host1x-ctx.15: Adding to iommu group 20
+Jul  5 19:27:57 nknu kernel: [    2.199517] platform 13e00000.host1x:nvcsi@15a00000: Fixing up cyclic dependency with 10-0010
+Jul  5 19:27:57 nknu kernel: [    2.199566] platform 13e00000.host1x:nvcsi@15a00000: Fixing up cyclic dependency with 9-0010
+Jul  5 19:27:57 nknu kernel: [    2.199596] platform 13e00000.host1x:nvcsi@15a00000: Fixing up cyclic dependency with tegra-capture-vi
+Jul  5 19:27:57 nknu kernel: [    4.366015] systemd[1]: Using hardware watchdog 'NVIDIA Tegra186 WDT', version 0, device /dev/watchdog
+Jul  5 19:27:57 nknu kernel: [    5.484176] systemd[1]: Starting Load Kernel Module drm...
+Jul  5 19:27:57 nknu kernel: [    5.495343] systemd[1]: Starting NVIDIA specific first-boot udev script...
+Jul  5 19:27:57 nknu kernel: [    6.129272] tegra-dce d800000.dce: Adding to iommu group 31
+Jul  5 19:27:57 nknu kernel: [    6.129778] dce: dce_ipc_channel_init:311  Invalid Channel State [0x0] for ch_type [2]
+Jul  5 19:27:57 nknu kernel: [    6.130079] dce: tegra_dce_probe:245  Found display consumer device
+Jul  5 19:27:57 nknu kernel: [    6.130788] dce: dce_mailbox_set_full_interrupt:157  Intr bit set multiple times for MB : [0x5]
+Jul  5 19:27:57 nknu kernel: [    6.130794] dce: dce_mailbox_set_full_interrupt:157  Intr bit set multiple times for MB : [0x5]
+Jul  5 19:27:57 nknu kernel: [    6.131045] dce: dce_admin_send_cmd_ver:456  version : [0x3] err : [0x0]
+Jul  5 19:27:57 nknu kernel: [    6.131249] dce: dce_mailbox_set_full_interrupt:157  Intr bit set multiple times for MB : [0x1]
+Jul  5 19:27:57 nknu kernel: [    6.131255] dce: dce_mailbox_set_full_interrupt:157  Intr bit set multiple times for MB : [0x1]
+Jul  5 19:27:57 nknu kernel: [    6.131257] dce: dce_admin_setup_clients_ipc:585  Channel Reset Complete for Type [1] ...
+Jul  5 19:27:57 nknu kernel: [    6.131259] dce: dce_admin_setup_clients_ipc:561  Get queue info failed for [2]
+Jul  5 19:27:57 nknu kernel: [    6.131464] dce: dce_mailbox_set_full_interrupt:157  Intr bit set multiple times for MB : [0x2]
+Jul  5 19:27:57 nknu kernel: [    6.131471] dce: dce_mailbox_set_full_interrupt:157  Intr bit set multiple times for MB : [0x2]
+Jul  5 19:27:57 nknu kernel: [    6.131474] dce: dce_admin_setup_clients_ipc:585  Channel Reset Complete for Type [3] ...
+Jul  5 19:27:57 nknu kernel: [    6.132452] dce: dce_start_boot_flow:166  DCE_BOOT_DONE
+Jul  5 19:27:57 nknu kernel: [    6.167841] scare-pigeon 13e00000.host1x:vi0-thi@15f00000: Adding to iommu group 33
+Jul  5 19:27:57 nknu kernel: [    6.172995] scare-pigeon 13e00000.host1x:vi0-thi@15f00000: syncpt_unit_base 60000000 syncpt_unit_size 4000000 size 10000
+Jul  5 19:27:57 nknu kernel: [    6.178814] scare-pigeon 13e00000.host1x:vi1-thi@14f00000: Adding to iommu group 34
+Jul  5 19:27:57 nknu kernel: [    6.181909] scare-pigeon 13e00000.host1x:vi1-thi@14f00000: syncpt_unit_base 60000000 syncpt_unit_size 4000000 size 10000
+Jul  5 19:27:57 nknu kernel: [    6.184188] scare-pigeon 13e00000.host1x:isp-thi@14b00000: Adding to iommu group 35
+Jul  5 19:27:57 nknu kernel: [    6.186541] scare-pigeon 13e00000.host1x:isp-thi@14b00000: syncpt_unit_base 60000000 syncpt_unit_size 4000000 size 10000
+Jul  5 19:27:57 nknu kernel: [    6.200745] nv_platform 13800000.display: Adding to iommu group 36
+Jul  5 19:27:57 nknu kernel: [    6.230492] platform 13800000.display:nvdisplay-niso: Adding to iommu group 37
+Jul  5 19:27:57 nknu kernel: [    6.505347] input: NVIDIA Jetson Orin NX HDA HDMI/DP,pcm=3 as /devices/platform/bus@0/3510000.hda/sound/card0/input9
+Jul  5 19:27:57 nknu kernel: [    6.511546] input: NVIDIA Jetson Orin NX HDA HDMI/DP,pcm=7 as /devices/platform/bus@0/3510000.hda/sound/card0/input10
+Jul  5 19:27:57 nknu kernel: [    6.515768] input: NVIDIA Jetson Orin NX HDA HDMI/DP,pcm=8 as /devices/platform/bus@0/3510000.hda/sound/card0/input11
+Jul  5 19:27:57 nknu kernel: [    6.527602] input: NVIDIA Jetson Orin NX HDA HDMI/DP,pcm=9 as /devices/platform/bus@0/3510000.hda/sound/card0/input12
+Jul  5 19:27:57 nknu kernel: [    6.551122] imx219 9-0010: tegracam sensor driver:imx219_v2.0.6
+Jul  5 19:27:57 nknu kernel: [    6.556645] tegra194-vi5 13e00000.host1x:vi0@15c00000: Adding to iommu group 33
+Jul  5 19:27:57 nknu kernel: [    6.558282] tegra194-vi5 13e00000.host1x:vi1@14c00000: Adding to iommu group 34
+Jul  5 19:27:57 nknu kernel: [    6.572761] imx219 10-0010: tegracam sensor driver:imx219_v2.0.6
+Jul  5 19:27:57 nknu kernel: [    6.574720] tegra-camrtc-capture-vi tegra-capture-vi: subdev 13e00000.host1x:nvcsi@15a00000- bound
+Jul  5 19:27:57 nknu kernel: [    6.574733] tegra-camrtc-capture-vi tegra-capture-vi: subdev 13e00000.host1x:nvcsi@15a00000- bound
+---(later, 19:3x-19:4x)---
+
+=== FAILING boot: udev / systemd-modules-load / modprobe problems ===
+Jul  5 19:27:57 nknu systemd-modules-load[455]: Inserted module 'nvmap'
+Jul  5 19:27:57 nknu systemd-modules-load[455]: Inserted module 'nvgpu'
+Jul  5 19:27:57 nknu systemd-modules-load[455]: Inserted module 'pwm_fan'
+Jul  5 19:27:57 nknu systemd-modules-load[455]: Inserted module 'ina3221'
+Jul  5 19:27:57 nknu systemd-modules-load[455]: Inserted module 'nvidia_p2p'
+Jul  5 19:27:57 nknu systemd[1]: modprobe@configfs.service: Deactivated successfully.
+Jul  5 19:27:57 nknu systemd[1]: modprobe@drm.service: Deactivated successfully.
+Jul  5 19:27:57 nknu systemd[1]: modprobe@efi_pstore.service: Deactivated successfully.
+Jul  5 19:27:57 nknu systemd[1]: modprobe@fuse.service: Deactivated successfully.
+Jul  5 19:27:57 nknu systemd-udevd[521]: nvme0n1: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/nvme0n1' failed with exit code 1.
+Jul  5 19:27:57 nknu systemd-udevd[515]: nvme0n1p15: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/nvme0n1p15' failed with exit code 1.
+Jul  5 19:27:57 nknu systemd-udevd[508]: nvme0n1p13: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/nvme0n1p13' failed with exit code 1.
+Jul  5 19:27:57 nknu systemd-udevd[499]: nvme0n1p3: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/nvme0n1p3' failed with exit code 1.
+Jul  5 19:27:57 nknu systemd-udevd[526]: nvme0n1p10: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/nvme0n1p10' failed with exit code 1.
+Jul  5 19:27:57 nknu systemd-udevd[513]: nvme0n1p6: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/nvme0n1p6' failed with exit code 1.
+Jul  5 19:27:57 nknu systemd-udevd[507]: nvme0n1p7: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/nvme0n1p7' failed with exit code 1.
+Jul  5 19:27:57 nknu systemd-udevd[529]: nvme0n1p14: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/nvme0n1p14' failed with exit code 1.
+Jul  5 19:27:57 nknu systemd-udevd[517]: nvme0n1p8: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/nvme0n1p8' failed with exit code 1.
+Jul  5 19:27:57 nknu systemd-udevd[506]: nvme0n1p9: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/nvme0n1p9' failed with exit code 1.
+Jul  5 19:27:57 nknu systemd-udevd[521]: nvme0n1p1: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/nvme0n1p1' failed with exit code 1.
+Jul  5 19:27:57 nknu systemd-udevd[501]: nvme0n1p12: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/nvme0n1p12' failed with exit code 1.
+Jul  5 19:27:57 nknu systemd-udevd[525]: nvme0n1p4: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/nvme0n1p4' failed with exit code 1.
+Jul  5 19:27:57 nknu systemd-udevd[527]: nvme0n1p11: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/nvme0n1p11' failed with exit code 1.
+Jul  5 19:27:57 nknu systemd-udevd[503]: nvme0n1p5: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/nvme0n1p5' failed with exit code 1.
+Jul  5 19:27:57 nknu systemd-udevd[528]: nvme0n1p2: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/nvme0n1p2' failed with exit code 1.
+Jul  5 19:27:57 nknu systemd-udevd[518]: Using default interface naming scheme 'v249'.
+Jul  5 19:27:57 nknu systemd-udevd[507]: Using default interface naming scheme 'v249'.
+Jul  5 19:27:57 nknu systemd-udevd[524]: Using default interface naming scheme 'v249'.
+Jul  5 19:27:57 nknu systemd[1]: modprobe@efi_pstore.service: Deactivated successfully.
+Jul  5 19:27:57 nknu systemd-udevd[530]: Using default interface naming scheme 'v249'.
+Jul  5 19:27:57 nknu systemd-udevd[508]: Using default interface naming scheme 'v249'.
+Jul  5 19:27:57 nknu systemd[1]: modprobe@efi_pstore.service: Deactivated successfully.
+Jul  5 19:27:57 nknu kernel: [    4.679565] systemd[1]: Created slice Slice /system/modprobe.
+Jul  5 19:27:57 nknu systemd-udevd[502]: Using default interface naming scheme 'v249'.
+Jul  5 19:27:57 nknu systemd-udevd[508]: zram4: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/zram4' failed with exit code 1.
+Jul  5 19:27:57 nknu systemd-udevd[504]: zram2: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/zram2' failed with exit code 1.
+Jul  5 19:27:57 nknu systemd-udevd[514]: zram3: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/zram3' failed with exit code 1.
+Jul  5 19:27:57 nknu systemd-udevd[529]: zram1: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/zram1' failed with exit code 1.
+Jul  5 19:27:57 nknu systemd-udevd[523]: zram5: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/zram5' failed with exit code 1.
+Jul  5 19:27:57 nknu systemd-udevd[499]: zram0: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/zram0' failed with exit code 1.
+Jul  5 19:27:57 nknu systemd-udevd[527]: zram6: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/zram6' failed with exit code 1.
+Jul  5 19:27:57 nknu systemd-udevd[527]: zram7: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/zram7' failed with exit code 1.
+Jul  5 19:27:57 nknu containerd[1136]: time="2026-07-05T19:27:57.663983968+08:00" level=info msg="skip loading plugin" error="EROFS unsupported, please `modprobe erofs`: skip plugin" id=io.containerd.snapshotter.v1.erofs type=io.containerd.snapshotter.v1
+
+=== FAILING boot: count of all kernel lines (sanity) ===
+954
+
+=== available older logs ===
+-rw-r----- 1 whoopsie adm    945647  7月  5 19:28 /mnt/jetson-ssd/var/log/kern.log
+-rw-r----- 1 whoopsie adm   1751643  7月  4 23:48 /mnt/jetson-ssd/var/log/kern.log.1
+-rw-r----- 1 whoopsie adm    295198  3月 26 18:02 /mnt/jetson-ssd/var/log/kern.log.2.gz
+-rw-r----- 1 whoopsie adm    445901  3月 24 19:03 /mnt/jetson-ssd/var/log/kern.log.3.gz
+-rw-r----- 1 whoopsie adm     88831 10月 28  2025 /mnt/jetson-ssd/var/log/kern.log.4.gz
+-rw-r----- 1 whoopsie adm   3442338  7月  5 19:40 /mnt/jetson-ssd/var/log/syslog
+-rw-r----- 1 whoopsie adm 162320810  7月  5 00:00 /mnt/jetson-ssd/var/log/syslog.1
+-rw-r----- 1 whoopsie adm   1101834  6月 29 15:53 /mnt/jetson-ssd/var/log/syslog.2.gz
+-rw-r----- 1 whoopsie adm   1591400  3月 25 09:51 /mnt/jetson-ssd/var/log/syslog.3.gz
+-rw-r----- 1 whoopsie adm    266956  3月 18 09:16 /mnt/jetson-ssd/var/log/syslog.4.gz
+
+=== WORKING boot reference: kern.log lines matching display pattern (last working boot before Jul 5 10:11) ===
+--- /mnt/jetson-ssd/var/log/kern.log.1 ---
+Jul  4 18:51:34 nknu kernel: [    8.071982] host1x-context host1x-ctx.11: Adding to iommu group 19
+Jul  4 18:51:34 nknu kernel: [    8.072091] host1x-context host1x-ctx.12: Adding to iommu group 20
+Jul  4 18:51:34 nknu kernel: [    8.072212] host1x-context host1x-ctx.13: Adding to iommu group 21
+Jul  4 18:51:34 nknu kernel: [    8.072334] host1x-context host1x-ctx.14: Adding to iommu group 22
+Jul  4 18:51:34 nknu kernel: [    8.072444] host1x-context host1x-ctx.15: Adding to iommu group 23
+Jul  4 18:51:34 nknu kernel: [    8.080193] platform 13e00000.host1x:nvcsi@15a00000: Fixing up cyclic dependency with 10-0010
+Jul  4 18:51:34 nknu kernel: [    8.080213] platform 13e00000.host1x:nvcsi@15a00000: Fixing up cyclic dependency with 9-0010
+Jul  4 18:51:34 nknu kernel: [    8.080229] platform 13e00000.host1x:nvcsi@15a00000: Fixing up cyclic dependency with tegra-capture-vi
+Jul  4 18:51:34 nknu kernel: [    8.453384] scare-pigeon 13e00000.host1x:vi0-thi@15f00000: Adding to iommu group 25
+Jul  4 18:51:34 nknu kernel: [    8.459126] scare-pigeon 13e00000.host1x:vi0-thi@15f00000: syncpt_unit_base 60000000 syncpt_unit_size 4000000 size 10000
+Jul  4 18:51:34 nknu kernel: [    8.459265] scare-pigeon 13e00000.host1x:vi1-thi@14f00000: Adding to iommu group 27
+Jul  4 18:51:34 nknu kernel: [    8.467449] scare-pigeon 13e00000.host1x:vi1-thi@14f00000: syncpt_unit_base 60000000 syncpt_unit_size 4000000 size 10000
+Jul  4 18:51:34 nknu kernel: [    8.469743] scare-pigeon 13e00000.host1x:isp-thi@14b00000: Adding to iommu group 28
+Jul  4 18:51:34 nknu kernel: [    8.473522] scare-pigeon 13e00000.host1x:isp-thi@14b00000: syncpt_unit_base 60000000 syncpt_unit_size 4000000 size 10000
+Jul  4 18:51:34 nknu kernel: [    8.560893] drm drm: [drm] Cannot find any crtc or sizes
+Jul  4 18:51:34 nknu kernel: [    8.570156] [drm] Initialized tegra 1.0.99 20120330 for drm on minor 0
+Jul  4 18:51:34 nknu kernel: [    8.801167] tegra194-vi5 13e00000.host1x:vi0@15c00000: Adding to iommu group 25
+Jul  4 18:51:34 nknu kernel: [    8.805970] tegra-camrtc-capture-vi tegra-capture-vi: subdev 13e00000.host1x:nvcsi@15a00000- bound
+Jul  4 18:51:34 nknu kernel: [    8.805984] tegra-camrtc-capture-vi tegra-capture-vi: subdev 13e00000.host1x:nvcsi@15a00000- bound
+Jul  4 18:51:34 nknu kernel: [    8.834097] tegra194-vi5 13e00000.host1x:vi1@14c00000: Adding to iommu group 27
+Jul  4 18:51:34 nknu kernel: [    8.946280] tegra-dce d800000.dce: Adding to iommu group 46
+Jul  4 18:51:34 nknu kernel: [    8.946753] dce: dce_ipc_channel_init:311  Invalid Channel State [0x0] for ch_type [2]
+Jul  4 18:51:34 nknu kernel: [    8.946980] dce: tegra_dce_probe:245  Found display consumer device
+Jul  4 18:51:34 nknu kernel: [    8.947460] dce: dce_mailbox_set_full_interrupt:157  Intr bit set multiple times for MB : [0x5]
+Jul  4 18:51:34 nknu kernel: [    8.947466] dce: dce_mailbox_set_full_interrupt:157  Intr bit set multiple times for MB : [0x5]
+Jul  4 18:51:34 nknu kernel: [    8.947732] dce: dce_admin_send_cmd_ver:456  version : [0x3] err : [0x0]
+Jul  4 18:51:34 nknu kernel: [    8.947943] dce: dce_mailbox_set_full_interrupt:157  Intr bit set multiple times for MB : [0x1]
+Jul  4 18:51:34 nknu kernel: [    8.947950] dce: dce_admin_setup_clients_ipc:585  Channel Reset Complete for Type [1] ...
+Jul  4 18:51:34 nknu kernel: [    8.947952] dce: dce_admin_setup_clients_ipc:561  Get queue info failed for [2]
+Jul  4 18:51:34 nknu kernel: [    8.948158] dce: dce_mailbox_set_full_interrupt:157  Intr bit set multiple times for MB : [0x2]
+Jul  4 18:51:34 nknu kernel: [    8.948164] dce: dce_admin_setup_clients_ipc:585  Channel Reset Complete for Type [3] ...
+Jul  4 18:51:34 nknu kernel: [    8.949147] dce: dce_start_boot_flow:166  DCE_BOOT_DONE
+Jul  4 18:51:34 nknu kernel: [    8.984009] nv_platform 13800000.display: Adding to iommu group 47
+Jul  4 18:51:34 nknu kernel: [    9.011154] platform 13800000.display:nvdisplay-niso: Adding to iommu group 48
+Jul  4 18:51:34 nknu kernel: [    9.094717] imx219 9-0010: tegracam sensor driver:imx219_v2.0.6
+Jul  4 18:51:34 nknu kernel: [    9.135032] imx219 10-0010: tegracam sensor driver:imx219_v2.0.6
+Jul  4 18:51:34 nknu kernel: [    9.200730] input: NVIDIA Jetson Orin NX HDA HDMI/DP,pcm=3 as /devices/platform/bus@0/3510000.hda/sound/card0/input2
+Jul  4 18:51:34 nknu kernel: [    9.202709] input: NVIDIA Jetson Orin NX HDA HDMI/DP,pcm=7 as /devices/platform/bus@0/3510000.hda/sound/card0/input3
+Jul  4 18:51:34 nknu kernel: [    9.203064] input: NVIDIA Jetson Orin NX HDA HDMI/DP,pcm=8 as /devices/platform/bus@0/3510000.hda/sound/card0/input4
+Jul  4 18:51:34 nknu kernel: [    9.203392] input: NVIDIA Jetson Orin NX HDA HDMI/DP,pcm=9 as /devices/platform/bus@0/3510000.hda/sound/card0/input5
+Jul  4 18:51:36 nknu kernel: [   13.226366] nvidia-modeset: Loading NVIDIA UNIX Open Kernel Mode Setting Driver for aarch64  540.4.0  Release Build  (buildbrain@mobile-u64-6336-d8000)  Tue Jan  7 17:35:14 PST 2025
+Jul  4 18:51:36 nknu kernel: [   13.233613] [drm] [nvidia-drm] [GPU ID 0x00020000] Loading driver
+Jul  4 18:51:36 nknu kernel: [   13.500287] NVRM rpcRmApiControl_dce: NVRM_RPC_DCE: Failed RM ctrl call cmd:0x731341 result 0xffff:
+Jul  4 18:51:36 nknu kernel: [   13.516535] [drm] Initialized nvidia-drm 0.0.0 20160202 for 13800000.display on minor 1
+Jul  4 18:51:36 nknu kernel: [   13.518323] nv_platform 13800000.display: [drm] Cannot find any crtc or sizes
+Jul  4 19:51:18 nknu kernel: [    0.000000] Machine model: NVIDIA Jetson Orin NX Engineering Reference Developer Kit Super
+Jul  4 19:51:18 nknu kernel: [    0.006073] CPU1: Booted secondary processor 0x0000000100 [0x410fd421]
+Jul  4 19:51:18 nknu kernel: [    0.006568] CPU2: Booted secondary processor 0x0000000200 [0x410fd421]
+Jul  4 19:51:18 nknu kernel: [    0.007002] CPU3: Booted secondary processor 0x0000000300 [0x410fd421]
+Jul  4 19:51:18 nknu kernel: [    0.009521] CPU4: Booted secondary processor 0x0000010000 [0x410fd421]
+Jul  4 19:51:18 nknu kernel: [    0.010013] CPU5: Booted secondary processor 0x0000010100 [0x410fd421]
+Jul  4 19:51:18 nknu kernel: [    0.010459] CPU6: Booted secondary processor 0x0000010200 [0x410fd421]
+Jul  4 19:51:18 nknu kernel: [    0.010913] CPU7: Booted secondary processor 0x0000010300 [0x410fd421]
+Jul  4 19:51:18 nknu kernel: [    0.010973] SMP: Total of 8 processors activated.
+Jul  4 19:51:18 nknu kernel: [    0.054802] DMI: NVIDIA NVIDIA Jetson Orin NX Engineering Reference Developer Kit Super/Jetson, BIOS 36.4.3-gcid-38968081 01/08/2025
+Jul  4 19:51:18 nknu kernel: [    1.379498] simple-framebuffer chosen:framebuffer: framebuffer at 0x47de00000, 0x21c0000 bytes
+Jul  4 19:51:18 nknu kernel: [    1.379507] simple-framebuffer chosen:framebuffer: format=x8r8g8b8, mode=3840x2160x32, linelength=16384
+Jul  4 19:51:18 nknu kernel: [    1.402477] simple-framebuffer chosen:framebuffer: fb0: simplefb registered!
+Jul  4 19:51:18 nknu kernel: [    6.225352] tegra-host1x 13e00000.host1x: Adding to iommu group 7
+Jul  4 19:51:18 nknu kernel: [    6.226652] host1x-context host1x-ctx.0: Adding to iommu group 8
+Jul  4 19:51:18 nknu kernel: [    6.226801] host1x-context host1x-ctx.1: Adding to iommu group 9
+Jul  4 19:51:18 nknu kernel: [    6.226933] host1x-context host1x-ctx.2: Adding to iommu group 10
+Jul  4 19:51:18 nknu kernel: [    6.227056] host1x-context host1x-ctx.3: Adding to iommu group 11
+Jul  4 19:51:18 nknu kernel: [    6.227210] host1x-context host1x-ctx.4: Adding to iommu group 12
+Jul  4 19:51:18 nknu kernel: [    6.227337] host1x-context host1x-ctx.5: Adding to iommu group 13
+Jul  4 19:51:18 nknu kernel: [    6.227448] host1x-context host1x-ctx.6: Adding to iommu group 14
+Jul  4 19:51:18 nknu kernel: [    6.227584] host1x-context host1x-ctx.7: Adding to iommu group 15
+Jul  4 19:51:18 nknu kernel: [    6.227743] host1x-context host1x-ctx.8: Adding to iommu group 16
+Jul  4 19:51:18 nknu kernel: [    6.227902] host1x-context host1x-ctx.9: Adding to iommu group 17
+Jul  4 19:51:18 nknu kernel: [    6.228036] host1x-context host1x-ctx.10: Adding to iommu group 18
+Jul  4 19:51:18 nknu kernel: [    6.228146] host1x-context host1x-ctx.11: Adding to iommu group 19
+Jul  4 19:51:18 nknu kernel: [    6.228260] host1x-context host1x-ctx.12: Adding to iommu group 20
+Jul  4 19:51:18 nknu kernel: [    6.228375] host1x-context host1x-ctx.13: Adding to iommu group 21
+Jul  4 19:51:18 nknu kernel: [    6.228487] host1x-context host1x-ctx.14: Adding to iommu group 22
+Jul  4 19:51:18 nknu kernel: [    6.228598] host1x-context host1x-ctx.15: Adding to iommu group 23
+Jul  4 19:51:18 nknu kernel: [    6.236999] platform 13e00000.host1x:nvcsi@15a00000: Fixing up cyclic dependency with 10-0010
+Jul  4 19:51:18 nknu kernel: [    6.237029] platform 13e00000.host1x:nvcsi@15a00000: Fixing up cyclic dependency with 9-0010
+Jul  4 19:51:18 nknu kernel: [    6.237043] platform 13e00000.host1x:nvcsi@15a00000: Fixing up cyclic dependency with tegra-capture-vi
+Jul  4 19:51:18 nknu kernel: [    6.569091] scare-pigeon 13e00000.host1x:vi0-thi@15f00000: Adding to iommu group 24
+Jul  4 19:51:18 nknu kernel: [    6.582031] scare-pigeon 13e00000.host1x:vi0-thi@15f00000: syncpt_unit_base 60000000 syncpt_unit_size 4000000 size 10000
+Jul  4 19:51:18 nknu kernel: [    6.585366] scare-pigeon 13e00000.host1x:vi1-thi@14f00000: Adding to iommu group 25
+Jul  4 19:51:18 nknu kernel: [    6.591007] scare-pigeon 13e00000.host1x:vi1-thi@14f00000: syncpt_unit_base 60000000 syncpt_unit_size 4000000 size 10000
+Jul  4 19:51:18 nknu kernel: [    6.596395] scare-pigeon 13e00000.host1x:isp-thi@14b00000: Adding to iommu group 26
+Jul  4 19:51:18 nknu kernel: [    6.608372] scare-pigeon 13e00000.host1x:isp-thi@14b00000: syncpt_unit_base 60000000 syncpt_unit_size 4000000 size 10000
+Jul  4 19:51:18 nknu kernel: [    6.725239] drm drm: [drm] Cannot find any crtc or sizes
+Jul  4 19:51:18 nknu kernel: [    6.730833] [drm] Initialized tegra 1.0.99 20120330 for drm on minor 0
+Jul  4 19:51:18 nknu kernel: [    6.857184] tegra194-vi5 13e00000.host1x:vi0@15c00000: Adding to iommu group 24
+Jul  4 19:51:18 nknu kernel: [    6.860610] tegra-camrtc-capture-vi tegra-capture-vi: subdev 13e00000.host1x:nvcsi@15a00000- bound
+Jul  4 19:51:18 nknu kernel: [    6.860621] tegra-camrtc-capture-vi tegra-capture-vi: subdev 13e00000.host1x:nvcsi@15a00000- bound
+Jul  4 19:51:18 nknu kernel: [    6.887066] tegra194-vi5 13e00000.host1x:vi1@14c00000: Adding to iommu group 25
+Jul  4 19:51:18 nknu kernel: [    7.049914] tegra-dce d800000.dce: Adding to iommu group 46
+Jul  4 19:51:18 nknu kernel: [    7.050342] dce: dce_ipc_channel_init:311  Invalid Channel State [0x0] for ch_type [2]
+Jul  4 19:51:18 nknu kernel: [    7.050673] dce: tegra_dce_probe:245  Found display consumer device
+Jul  4 19:51:18 nknu kernel: [    7.051038] dce: dce_mailbox_set_full_interrupt:157  Intr bit set multiple times for MB : [0x5]
+Jul  4 19:51:18 nknu kernel: [    7.051047] dce: dce_mailbox_set_full_interrupt:157  Intr bit set multiple times for MB : [0x5]
+Jul  4 19:51:18 nknu kernel: [    7.051055] dce: dce_mailbox_set_full_interrupt:157  Intr bit set multiple times for MB : [0x5]
+Jul  4 19:51:18 nknu kernel: [    7.051301] dce: dce_admin_send_cmd_ver:456  version : [0x3] err : [0x0]
+Jul  4 19:51:18 nknu kernel: [    7.051499] dce: dce_mailbox_set_full_interrupt:157  Intr bit set multiple times for MB : [0x1]
+Jul  4 19:51:18 nknu kernel: [    7.051505] dce: dce_admin_setup_clients_ipc:585  Channel Reset Complete for Type [1] ...
+Jul  4 19:51:18 nknu kernel: [    7.051507] dce: dce_admin_setup_clients_ipc:561  Get queue info failed for [2]
+Jul  4 19:51:18 nknu kernel: [    7.051708] dce: dce_mailbox_set_full_interrupt:157  Intr bit set multiple times for MB : [0x2]
+Jul  4 19:51:18 nknu kernel: [    7.051715] dce: dce_admin_setup_clients_ipc:585  Channel Reset Complete for Type [3] ...
+Jul  4 19:51:18 nknu kernel: [    7.052694] dce: dce_start_boot_flow:166  DCE_BOOT_DONE
+Jul  4 19:51:18 nknu kernel: [    7.142039] nv_platform 13800000.display: Adding to iommu group 47
+Jul  4 19:51:18 nknu kernel: [    7.154345] platform 13800000.display:nvdisplay-niso: Adding to iommu group 48
+Jul  4 19:51:18 nknu kernel: [    7.317419] input: NVIDIA Jetson Orin NX HDA HDMI/DP,pcm=3 as /devices/platform/bus@0/3510000.hda/sound/card0/input4
+Jul  4 19:51:18 nknu kernel: [    7.347506] input: NVIDIA Jetson Orin NX HDA HDMI/DP,pcm=7 as /devices/platform/bus@0/3510000.hda/sound/card0/input5
+Jul  4 19:51:18 nknu kernel: [    7.368148] imx219 9-0010: tegracam sensor driver:imx219_v2.0.6
+Jul  4 19:51:18 nknu kernel: [    7.372866] input: NVIDIA Jetson Orin NX HDA HDMI/DP,pcm=8 as /devices/platform/bus@0/3510000.hda/sound/card0/input6
+Jul  4 19:51:18 nknu kernel: [    7.406392] input: NVIDIA Jetson Orin NX HDA HDMI/DP,pcm=9 as /devices/platform/bus@0/3510000.hda/sound/card0/input7
+Jul  4 19:51:18 nknu kernel: [    7.423856] imx219 10-0010: tegracam sensor driver:imx219_v2.0.6
+Jul  4 19:51:21 nknu kernel: [   13.240229] nvidia-modeset: Loading NVIDIA UNIX Open Kernel Mode Setting Driver for aarch64  540.4.0  Release Build  (buildbrain@mobile-u64-6336-d8000)  Tue Jan  7 17:35:14 PST 2025
+Jul  4 19:51:21 nknu kernel: [   13.247733] [drm] [nvidia-drm] [GPU ID 0x00020000] Loading driver
+Jul  4 19:51:21 nknu kernel: [   13.567578] NVRM rpcRmApiControl_dce: NVRM_RPC_DCE: Failed RM ctrl call cmd:0x731341 result 0xffff:
+Jul  4 19:51:22 nknu kernel: [   13.820791] [drm] Initialized nvidia-drm 0.0.0 20160202 for 13800000.display on minor 1
+Jul  4 19:51:22 nknu kernel: [   13.820918] fb0: switching to nvidia-drm from simple
+Jul  4 19:51:22 nknu kernel: [   13.983664] nv_platform 13800000.display: [drm] fb0: nvidia-drmdrmfb frame buffer device
+Jul  4 19:51:25 nknu kernel: [   17.631822] audit: type=1326 audit(1783165885.925:2): auid=4294967295 uid=0 gid=0 ses=4294967295 subj=kernel pid=2351 comm="cupsd" exe="/snap/cups/1226/sbin/cupsd" sig=0 arch=c00000b7 syscall=55 compat=0 ip=0xffffb031ce0c code=0x50000
+Jul  4 23:19:51 nknu kernel: [ 1989.315064] NVRM rpcRmApiControl_dce: NVRM_RPC_DCE: Failed RM ctrl call cmd:0x731341 result 0xffff:
+Jul  4 23:22:12 nknu kernel: [ 2130.451367] NVRM rpcRmApiControl_dce: NVRM_RPC_DCE: Failed RM ctrl call cmd:0x731341 result 0xffff:
+--- /mnt/jetson-ssd/var/log/kern.log ---
+Jul  5 01:15:56 nknu kernel: [    7.689760] dce: dce_mailbox_set_full_interrupt:157  Intr bit set multiple times for MB : [0x5]
+Jul  5 01:15:56 nknu kernel: [    7.690025] dce: dce_admin_send_cmd_ver:456  version : [0x3] err : [0x0]
+Jul  5 01:15:56 nknu kernel: [    7.690236] dce: dce_mailbox_set_full_interrupt:157  Intr bit set multiple times for MB : [0x1]
+Jul  5 01:15:56 nknu kernel: [    7.690243] dce: dce_mailbox_set_full_interrupt:157  Intr bit set multiple times for MB : [0x1]
+Jul  5 01:15:56 nknu kernel: [    7.690245] dce: dce_admin_setup_clients_ipc:585  Channel Reset Complete for Type [1] ...
+Jul  5 01:15:56 nknu kernel: [    7.690246] dce: dce_admin_setup_clients_ipc:561  Get queue info failed for [2]
+Jul  5 01:15:56 nknu kernel: [    7.690450] dce: dce_mailbox_set_full_interrupt:157  Intr bit set multiple times for MB : [0x2]
+Jul  5 01:15:56 nknu kernel: [    7.690456] dce: dce_mailbox_set_full_interrupt:157  Intr bit set multiple times for MB : [0x2]
+Jul  5 01:15:56 nknu kernel: [    7.690460] dce: dce_admin_setup_clients_ipc:585  Channel Reset Complete for Type [3] ...
+Jul  5 01:15:56 nknu kernel: [    7.691434] dce: dce_start_boot_flow:166  DCE_BOOT_DONE
+Jul  5 01:15:56 nknu kernel: [    7.756888] nv_platform 13800000.display: Adding to iommu group 48
+Jul  5 01:15:56 nknu kernel: [    7.765330] platform 13800000.display:nvdisplay-niso: Adding to iommu group 49
+Jul  5 01:15:56 nknu kernel: [    7.823135] imx219 9-0010: tegracam sensor driver:imx219_v2.0.6
+Jul  5 01:15:56 nknu kernel: [    7.880943] imx219 10-0010: tegracam sensor driver:imx219_v2.0.6
+Jul  5 01:15:56 nknu kernel: [    7.940102] input: NVIDIA Jetson Orin NX HDA HDMI/DP,pcm=3 as /devices/platform/bus@0/3510000.hda/sound/card0/input4
+Jul  5 01:15:56 nknu kernel: [    7.957956] input: NVIDIA Jetson Orin NX HDA HDMI/DP,pcm=7 as /devices/platform/bus@0/3510000.hda/sound/card0/input5
+Jul  5 01:15:56 nknu kernel: [    7.958323] input: NVIDIA Jetson Orin NX HDA HDMI/DP,pcm=8 as /devices/platform/bus@0/3510000.hda/sound/card0/input6
+Jul  5 01:15:56 nknu kernel: [    7.958653] input: NVIDIA Jetson Orin NX HDA HDMI/DP,pcm=9 as /devices/platform/bus@0/3510000.hda/sound/card0/input7
+Jul  5 01:15:58 nknu kernel: [   13.698348] nvidia-modeset: Loading NVIDIA UNIX Open Kernel Mode Setting Driver for aarch64  540.4.0  Release Build  (buildbrain@mobile-u64-6336-d8000)  Tue Jan  7 17:35:14 PST 2025
+Jul  5 01:15:58 nknu kernel: [   13.703801] [drm] [nvidia-drm] [GPU ID 0x00020000] Loading driver
+Jul  5 01:15:59 nknu kernel: [   14.021965] NVRM rpcRmApiControl_dce: NVRM_RPC_DCE: Failed RM ctrl call cmd:0x731341 result 0xffff:
+Jul  5 01:15:59 nknu kernel: [   14.276007] [drm] Initialized nvidia-drm 0.0.0 20160202 for 13800000.display on minor 1
+Jul  5 01:15:59 nknu kernel: [   14.276140] fb0: switching to nvidia-drm from simple
+Jul  5 01:15:59 nknu kernel: [   14.437166] nv_platform 13800000.display: [drm] fb0: nvidia-drmdrmfb frame buffer device
+Jul  5 01:19:50 nknu kernel: [   13.261873] nvidia-modeset: Loading NVIDIA UNIX Open Kernel Mode Setting Driver for aarch64  540.4.0  Release Build  (buildbrain@mobile-u64-6336-d8000)  Tue Jan  7 17:35:14 PST 2025
+Jul  5 01:19:50 nknu kernel: [   13.269205] [drm] [nvidia-drm] [GPU ID 0x00020000] Loading driver
+Jul  5 01:19:50 nknu kernel: [   13.594412] NVRM rpcRmApiControl_dce: NVRM_RPC_DCE: Failed RM ctrl call cmd:0x731341 result 0xffff:
+Jul  5 01:19:50 nknu kernel: [   13.848161] [drm] Initialized nvidia-drm 0.0.0 20160202 for 13800000.display on minor 1
+Jul  5 01:19:50 nknu kernel: [   13.848295] fb0: switching to nvidia-drm from simple
+Jul  5 01:19:51 nknu kernel: [   14.016329] nv_platform 13800000.display: [drm] fb0: nvidia-drmdrmfb frame buffer device
+Jul  5 10:04:47 nknu kernel: [    0.000000] Machine model: NVIDIA Jetson Orin NX Engineering Reference Developer Kit Super
+Jul  5 10:04:47 nknu kernel: [    0.005033] CPU1: Booted secondary processor 0x0000000100 [0x410fd421]
+Jul  5 10:04:47 nknu kernel: [    0.005400] CPU2: Booted secondary processor 0x0000000200 [0x410fd421]
+Jul  5 10:04:47 nknu kernel: [    0.005732] CPU3: Booted secondary processor 0x0000000300 [0x410fd421]
+Jul  5 10:04:47 nknu kernel: [    0.008182] CPU4: Booted secondary processor 0x0000010000 [0x410fd421]
+Jul  5 10:04:47 nknu kernel: [    0.008679] CPU5: Booted secondary processor 0x0000010100 [0x410fd421]
+Jul  5 10:04:47 nknu kernel: [    0.009124] CPU6: Booted secondary processor 0x0000010200 [0x410fd421]
+Jul  5 10:04:47 nknu kernel: [    0.009578] CPU7: Booted secondary processor 0x0000010300 [0x410fd421]
+Jul  5 10:04:47 nknu kernel: [    0.009637] SMP: Total of 8 processors activated.
+Jul  5 10:04:47 nknu kernel: [    0.054023] DMI: NVIDIA NVIDIA Jetson Orin NX Engineering Reference Developer Kit Super/Jetson, BIOS 36.4.3-gcid-38968081 01/08/2025
+Jul  5 10:04:47 nknu kernel: [    2.082584] simple-framebuffer chosen:framebuffer: framebuffer at 0x47de00000, 0x1680000 bytes
+Jul  5 10:04:47 nknu kernel: [    2.082601] simple-framebuffer chosen:framebuffer: format=x8r8g8b8, mode=2560x1440x32, linelength=16384
+Jul  5 10:04:47 nknu kernel: [    2.093118] simple-framebuffer chosen:framebuffer: fb0: simplefb registered!
+Jul  5 10:04:47 nknu kernel: [    0.000000] Machine model: NVIDIA Jetson Orin NX Engineering Reference Developer Kit Super
+Jul  5 10:04:47 nknu kernel: [    0.005016] CPU1: Booted secondary processor 0x0000000100 [0x410fd421]
+Jul  5 10:04:47 nknu kernel: [    0.005383] CPU2: Booted secondary processor 0x0000000200 [0x410fd421]
+Jul  5 10:04:47 nknu kernel: [    0.005713] CPU3: Booted secondary processor 0x0000000300 [0x410fd421]
+Jul  5 10:04:47 nknu kernel: [    0.008166] CPU4: Booted secondary processor 0x0000010000 [0x410fd421]
+Jul  5 10:04:47 nknu kernel: [    0.008665] CPU5: Booted secondary processor 0x0000010100 [0x410fd421]
+Jul  5 10:04:47 nknu kernel: [    0.009114] CPU6: Booted secondary processor 0x0000010200 [0x410fd421]
+Jul  5 10:04:47 nknu kernel: [    0.009574] CPU7: Booted secondary processor 0x0000010300 [0x410fd421]
+Jul  5 10:04:47 nknu kernel: [    0.009635] SMP: Total of 8 processors activated.
+Jul  5 10:04:47 nknu kernel: [    0.053636] DMI: NVIDIA NVIDIA Jetson Orin NX Engineering Reference Developer Kit Super/Jetson, BIOS 36.4.3-gcid-38968081 01/08/2025
+Jul  5 10:04:47 nknu kernel: [    2.083891] simple-framebuffer chosen:framebuffer: framebuffer at 0x47de00000, 0x1680000 bytes
+Jul  5 10:04:47 nknu kernel: [    2.083899] simple-framebuffer chosen:framebuffer: format=x8r8g8b8, mode=2560x1440x32, linelength=16384
+Jul  5 10:04:47 nknu kernel: [    2.099650] simple-framebuffer chosen:framebuffer: fb0: simplefb registered!
+Jan  1 08:00:32 nknu kernel: [    0.000000] Machine model: NVIDIA Jetson Orin NX Engineering Reference Developer Kit Super
+Jan  1 08:00:32 nknu kernel: [    0.004984] CPU1: Booted secondary processor 0x0000000100 [0x410fd421]
+Jan  1 08:00:32 nknu kernel: [    0.005343] CPU2: Booted secondary processor 0x0000000200 [0x410fd421]
+Jan  1 08:00:32 nknu kernel: [    0.005671] CPU3: Booted secondary processor 0x0000000300 [0x410fd421]
+Jan  1 08:00:32 nknu kernel: [    0.007998] CPU4: Booted secondary processor 0x0000010000 [0x410fd421]
+Jan  1 08:00:32 nknu kernel: [    0.008375] CPU5: Booted secondary processor 0x0000010100 [0x410fd421]
+Jan  1 08:00:32 nknu kernel: [    0.008746] CPU6: Booted secondary processor 0x0000010200 [0x410fd421]
+Jan  1 08:00:32 nknu kernel: [    0.009202] CPU7: Booted secondary processor 0x0000010300 [0x410fd421]
+Jan  1 08:00:32 nknu kernel: [    0.009260] SMP: Total of 8 processors activated.
+Jan  1 08:00:32 nknu kernel: [    0.052963] DMI: NVIDIA NVIDIA Jetson Orin NX Engineering Reference Developer Kit Super/Jetson, BIOS 36.4.3-gcid-38968081 01/08/2025
+Jan  1 08:00:32 nknu kernel: [    1.723715] simple-framebuffer chosen:framebuffer: framebuffer at 0x47de00000, 0x1680000 bytes
+Jan  1 08:00:32 nknu kernel: [    1.723735] simple-framebuffer chosen:framebuffer: format=x8r8g8b8, mode=2560x1440x32, linelength=16384
+Jan  1 08:00:32 nknu kernel: [    1.738834] simple-framebuffer chosen:framebuffer: fb0: simplefb registered!
+Jan  1 08:00:32 nknu kernel: [    2.084074] host1x: loading out-of-tree module taints kernel.
+Jan  1 08:00:32 nknu kernel: [    2.087528] tegra-host1x 13e00000.host1x: Adding to iommu group 3
+Jan  1 08:00:32 nknu kernel: [    2.091082] host1x-context host1x-ctx.0: Adding to iommu group 4
+Jan  1 08:00:32 nknu kernel: [    2.091286] host1x-context host1x-ctx.1: Adding to iommu group 5
+Jan  1 08:00:32 nknu kernel: [    2.091395] host1x-context host1x-ctx.2: Adding to iommu group 6
+Jan  1 08:00:32 nknu kernel: [    2.091497] host1x-context host1x-ctx.3: Adding to iommu group 7
+Jan  1 08:00:32 nknu kernel: [    2.091599] host1x-context host1x-ctx.4: Adding to iommu group 8
+Jan  1 08:00:32 nknu kernel: [    2.091744] host1x-context host1x-ctx.5: Adding to iommu group 9
+Jan  1 08:00:32 nknu kernel: [    2.091844] host1x-context host1x-ctx.6: Adding to iommu group 10
+Jan  1 08:00:32 nknu kernel: [    2.091964] host1x-context host1x-ctx.7: Adding to iommu group 11
+Jan  1 08:00:32 nknu kernel: [    2.092136] host1x-context host1x-ctx.8: Adding to iommu group 12
+Jan  1 08:00:32 nknu kernel: [    2.092251] host1x-context host1x-ctx.9: Adding to iommu group 13
+Jan  1 08:00:32 nknu kernel: [    2.092355] host1x-context host1x-ctx.10: Adding to iommu group 14
+Jan  1 08:00:32 nknu kernel: [    2.092453] host1x-context host1x-ctx.11: Adding to iommu group 15
+Jan  1 08:00:32 nknu kernel: [    2.092567] host1x-context host1x-ctx.12: Adding to iommu group 16
+Jan  1 08:00:32 nknu kernel: [    2.092712] host1x-context host1x-ctx.13: Adding to iommu group 17
+Jan  1 08:00:32 nknu kernel: [    2.092839] host1x-context host1x-ctx.14: Adding to iommu group 18
+Jan  1 08:00:32 nknu kernel: [    2.092939] host1x-context host1x-ctx.15: Adding to iommu group 19
+Jan  1 08:00:32 nknu kernel: [    2.107948] platform 13e00000.host1x:nvcsi@15a00000: Fixing up cyclic dependency with 10-0010
+Jan  1 08:00:32 nknu kernel: [    2.107965] platform 13e00000.host1x:nvcsi@15a00000: Fixing up cyclic dependency with 9-0010
+Jan  1 08:00:32 nknu kernel: [    2.107977] platform 13e00000.host1x:nvcsi@15a00000: Fixing up cyclic dependency with tegra-capture-vi
+Jan  1 08:00:32 nknu kernel: [    6.252938] tegra-dce d800000.dce: Adding to iommu group 31
+Jan  1 08:00:32 nknu kernel: [    6.253408] dce: dce_ipc_channel_init:311  Invalid Channel State [0x0] for ch_type [2]
+Jan  1 08:00:32 nknu kernel: [    6.253669] dce: tegra_dce_probe:245  Found display consumer device
+Jan  1 08:00:32 nknu kernel: [    6.254112] dce: dce_mailbox_set_full_interrupt:157  Intr bit set multiple times for MB : [0x5]
+Jan  1 08:00:32 nknu kernel: [    6.254118] dce: dce_mailbox_set_full_interrupt:157  Intr bit set multiple times for MB : [0x5]
+Jan  1 08:00:32 nknu kernel: [    6.254368] dce: dce_admin_send_cmd_ver:456  version : [0x3] err : [0x0]
+Jan  1 08:00:32 nknu kernel: [    6.254565] dce: dce_mailbox_set_full_interrupt:157  Intr bit set multiple times for MB : [0x1]
+Jan  1 08:00:32 nknu kernel: [    6.254571] dce: dce_admin_setup_clients_ipc:585  Channel Reset Complete for Type [1] ...
+Jan  1 08:00:32 nknu kernel: [    6.254572] dce: dce_admin_setup_clients_ipc:561  Get queue info failed for [2]
+Jan  1 08:00:32 nknu kernel: [    6.254777] dce: dce_mailbox_set_full_interrupt:157  Intr bit set multiple times for MB : [0x2]
+Jan  1 08:00:32 nknu kernel: [    6.254785] dce: dce_admin_setup_clients_ipc:585  Channel Reset Complete for Type [3] ...
+Jan  1 08:00:32 nknu kernel: [    6.255756] dce: dce_start_boot_flow:166  DCE_BOOT_DONE
+Jan  1 08:00:32 nknu kernel: [    6.299694] scare-pigeon 13e00000.host1x:vi0-thi@15f00000: Adding to iommu group 32
+Jan  1 08:00:32 nknu kernel: [    6.304672] scare-pigeon 13e00000.host1x:vi0-thi@15f00000: syncpt_unit_base 60000000 syncpt_unit_size 4000000 size 10000
+Jan  1 08:00:32 nknu kernel: [    6.313906] scare-pigeon 13e00000.host1x:vi1-thi@14f00000: Adding to iommu group 34
+Jan  1 08:00:32 nknu kernel: [    6.314460] nv_platform 13800000.display: Adding to iommu group 35
+Jan  1 08:00:32 nknu kernel: [    6.321015] platform 13800000.display:nvdisplay-niso: Adding to iommu group 36
+Jan  1 08:00:32 nknu kernel: [    6.326348] scare-pigeon 13e00000.host1x:vi1-thi@14f00000: syncpt_unit_base 60000000 syncpt_unit_size 4000000 size 10000
+Jan  1 08:00:32 nknu kernel: [    6.344539] scare-pigeon 13e00000.host1x:isp-thi@14b00000: Adding to iommu group 37
+Jan  1 08:00:32 nknu kernel: [    6.357435] scare-pigeon 13e00000.host1x:isp-thi@14b00000: syncpt_unit_base 60000000 syncpt_unit_size 4000000 size 10000
+Jan  1 08:00:32 nknu kernel: [    6.583883] input: NVIDIA Jetson Orin NX HDA HDMI/DP,pcm=3 as /devices/platform/bus@0/3510000.hda/sound/card0/input9
+Jan  1 08:00:32 nknu kernel: [    6.595116] input: NVIDIA Jetson Orin NX HDA HDMI/DP,pcm=7 as /devices/platform/bus@0/3510000.hda/sound/card0/input10
+Jan  1 08:00:32 nknu kernel: [    6.595236] input: NVIDIA Jetson Orin NX HDA HDMI/DP,pcm=8 as /devices/platform/bus@0/3510000.hda/sound/card0/input11
+Jan  1 08:00:32 nknu kernel: [    6.595323] input: NVIDIA Jetson Orin NX HDA HDMI/DP,pcm=9 as /devices/platform/bus@0/3510000.hda/sound/card0/input12
+Jan  1 08:00:32 nknu kernel: [    6.652981] imx219 9-0010: tegracam sensor driver:imx219_v2.0.6
+Jan  1 08:00:32 nknu kernel: [    6.656460] tegra-camrtc-capture-vi tegra-capture-vi: subdev 13e00000.host1x:nvcsi@15a00000- bound
+Jan  1 08:00:32 nknu kernel: [    6.656469] tegra-camrtc-capture-vi tegra-capture-vi: subdev 13e00000.host1x:nvcsi@15a00000- bound
+Jan  1 08:00:32 nknu kernel: [    6.684767] tegra194-vi5 13e00000.host1x:vi0@15c00000: Adding to iommu group 32
+Jan  1 08:00:32 nknu kernel: [    6.685318] imx219 10-0010: tegracam sensor driver:imx219_v2.0.6
+Jan  1 08:00:32 nknu kernel: [    6.688626] tegra194-vi5 13e00000.host1x:vi1@14c00000: Adding to iommu group 34
+--- kern.log.2.gz (tail) ---
+Mar 26 17:54:16 yahboom kernel: [    6.214065] host1x-context host1x-ctx.2: Adding to iommu group 10
+Mar 26 17:54:16 yahboom kernel: [    6.214204] host1x-context host1x-ctx.3: Adding to iommu group 11
+Mar 26 17:54:16 yahboom kernel: [    6.214354] host1x-context host1x-ctx.4: Adding to iommu group 12
+Mar 26 17:54:16 yahboom kernel: [    6.214517] host1x-context host1x-ctx.5: Adding to iommu group 13
+Mar 26 17:54:16 yahboom kernel: [    6.214664] host1x-context host1x-ctx.6: Adding to iommu group 14
+Mar 26 17:54:16 yahboom kernel: [    6.214818] host1x-context host1x-ctx.7: Adding to iommu group 15
+Mar 26 17:54:16 yahboom kernel: [    6.214978] host1x-context host1x-ctx.8: Adding to iommu group 16
+Mar 26 17:54:16 yahboom kernel: [    6.215145] host1x-context host1x-ctx.9: Adding to iommu group 17
+Mar 26 17:54:16 yahboom kernel: [    6.215279] host1x-context host1x-ctx.10: Adding to iommu group 18
+Mar 26 17:54:16 yahboom kernel: [    6.215426] host1x-context host1x-ctx.11: Adding to iommu group 19
+Mar 26 17:54:16 yahboom kernel: [    6.215577] host1x-context host1x-ctx.12: Adding to iommu group 20
+Mar 26 17:54:16 yahboom kernel: [    6.215724] host1x-context host1x-ctx.13: Adding to iommu group 21
+Mar 26 17:54:16 yahboom kernel: [    6.215868] host1x-context host1x-ctx.14: Adding to iommu group 22
+Mar 26 17:54:16 yahboom kernel: [    6.216006] host1x-context host1x-ctx.15: Adding to iommu group 23
+Mar 26 17:54:16 yahboom kernel: [    6.224929] platform 13e00000.host1x:nvcsi@15a00000: Fixing up cyclic dependency with 10-0010
+Mar 26 17:54:16 yahboom kernel: [    6.224950] platform 13e00000.host1x:nvcsi@15a00000: Fixing up cyclic dependency with 9-0010
+Mar 26 17:54:16 yahboom kernel: [    6.224967] platform 13e00000.host1x:nvcsi@15a00000: Fixing up cyclic dependency with tegra-capture-vi
+Mar 26 17:54:16 yahboom kernel: [    6.600597] scare-pigeon 13e00000.host1x:vi0-thi@15f00000: Adding to iommu group 26
+Mar 26 17:54:16 yahboom kernel: [    6.610929] scare-pigeon 13e00000.host1x:vi0-thi@15f00000: syncpt_unit_base 60000000 syncpt_unit_size 4000000 size 10000
+Mar 26 17:54:16 yahboom kernel: [    6.623906] scare-pigeon 13e00000.host1x:vi1-thi@14f00000: Adding to iommu group 28
+Mar 26 17:54:16 yahboom kernel: [    6.633140] scare-pigeon 13e00000.host1x:vi1-thi@14f00000: syncpt_unit_base 60000000 syncpt_unit_size 4000000 size 10000
+Mar 26 17:54:16 yahboom kernel: [    6.640613] scare-pigeon 13e00000.host1x:isp-thi@14b00000: Adding to iommu group 30
+Mar 26 17:54:16 yahboom kernel: [    6.646802] scare-pigeon 13e00000.host1x:isp-thi@14b00000: syncpt_unit_base 60000000 syncpt_unit_size 4000000 size 10000
+Mar 26 17:54:16 yahboom kernel: [    6.769920] drm drm: [drm] Cannot find any crtc or sizes
+Mar 26 17:54:16 yahboom kernel: [    6.785289] [drm] Initialized tegra 1.0.99 20120330 for drm on minor 0
+Mar 26 17:54:16 yahboom kernel: [    7.023576] tegra194-vi5 13e00000.host1x:vi0@15c00000: Adding to iommu group 26
+Mar 26 17:54:16 yahboom kernel: [    7.027201] tegra-camrtc-capture-vi tegra-capture-vi: subdev 13e00000.host1x:nvcsi@15a00000- bound
+Mar 26 17:54:16 yahboom kernel: [    7.027213] tegra-camrtc-capture-vi tegra-capture-vi: subdev 13e00000.host1x:nvcsi@15a00000- bound
+Mar 26 17:54:16 yahboom kernel: [    7.049323] tegra194-vi5 13e00000.host1x:vi1@14c00000: Adding to iommu group 28
+Mar 26 17:54:16 yahboom kernel: [    7.246594] tegra-dce d800000.dce: Adding to iommu group 46
+Mar 26 17:54:16 yahboom kernel: [    7.247041] dce: dce_ipc_channel_init:311  Invalid Channel State [0x0] for ch_type [2]
+Mar 26 17:54:16 yahboom kernel: [    7.247246] dce: tegra_dce_probe:245  Found display consumer device
+Mar 26 17:54:16 yahboom kernel: [    7.247759] dce: dce_mailbox_set_full_interrupt:157  Intr bit set multiple times for MB : [0x5]
+Mar 26 17:54:16 yahboom kernel: [    7.247765] dce: dce_mailbox_set_full_interrupt:157  Intr bit set multiple times for MB : [0x5]
+Mar 26 17:54:16 yahboom kernel: [    7.248029] dce: dce_admin_send_cmd_ver:456  version : [0x3] err : [0x0]
+Mar 26 17:54:16 yahboom kernel: [    7.248233] dce: dce_mailbox_set_full_interrupt:157  Intr bit set multiple times for MB : [0x1]
+Mar 26 17:54:16 yahboom kernel: [    7.248239] dce: dce_admin_setup_clients_ipc:585  Channel Reset Complete for Type [1] ...
+Mar 26 17:54:16 yahboom kernel: [    7.248241] dce: dce_admin_setup_clients_ipc:561  Get queue info failed for [2]
+Mar 26 17:54:16 yahboom kernel: [    7.248435] dce: dce_mailbox_set_full_interrupt:157  Intr bit set multiple times for MB : [0x2]
+Mar 26 17:54:16 yahboom kernel: [    7.248441] dce: dce_admin_setup_clients_ipc:585  Channel Reset Complete for Type [3] ...
+Mar 26 17:54:16 yahboom kernel: [    7.249426] dce: dce_start_boot_flow:166  DCE_BOOT_DONE
+Mar 26 17:54:16 yahboom kernel: [    7.330957] nv_platform 13800000.display: Adding to iommu group 47
+Mar 26 17:54:16 yahboom kernel: [    7.352875] platform 13800000.display:nvdisplay-niso: Adding to iommu group 48
+Mar 26 17:54:16 yahboom kernel: [    7.535887] imx219 9-0010: tegracam sensor driver:imx219_v2.0.6
+Mar 26 17:54:16 yahboom kernel: [    7.552822] imx219 10-0010: tegracam sensor driver:imx219_v2.0.6
+Mar 26 17:54:16 yahboom kernel: [    7.561538] input: NVIDIA Jetson Orin NX HDA HDMI/DP,pcm=3 as /devices/platform/bus@0/3510000.hda/sound/card0/input3
+Mar 26 17:54:16 yahboom kernel: [    7.561635] input: NVIDIA Jetson Orin NX HDA HDMI/DP,pcm=7 as /devices/platform/bus@0/3510000.hda/sound/card0/input4
+Mar 26 17:54:16 yahboom kernel: [    7.561710] input: NVIDIA Jetson Orin NX HDA HDMI/DP,pcm=8 as /devices/platform/bus@0/3510000.hda/sound/card0/input5
+Mar 26 17:54:16 yahboom kernel: [    7.561777] input: NVIDIA Jetson Orin NX HDA HDMI/DP,pcm=9 as /devices/platform/bus@0/3510000.hda/sound/card0/input6
+Mar 26 17:54:18 yahboom kernel: [   13.294129] nvidia-modeset: Loading NVIDIA UNIX Open Kernel Mode Setting Driver for aarch64  540.4.0  Release Build  (buildbrain@mobile-u64-6336-d8000)  Tue Jan  7 17:35:14 PST 2025
+Mar 26 17:54:18 yahboom kernel: [   13.300280] [drm] [nvidia-drm] [GPU ID 0x00020000] Loading driver
+Mar 26 17:54:19 yahboom kernel: [   13.614499] NVRM rpcRmApiControl_dce: NVRM_RPC_DCE: Failed RM ctrl call cmd:0x731341 result 0xffff:
+Mar 26 17:54:19 yahboom kernel: [   13.868739] [drm] Initialized nvidia-drm 0.0.0 20160202 for 13800000.display on minor 1
+Mar 26 17:54:19 yahboom kernel: [   13.868866] fb0: switching to nvidia-drm from simple
+Mar 26 17:54:19 yahboom kernel: [   14.029560] nv_platform 13800000.display: [drm] fb0: nvidia-drmdrmfb frame buffer device
+Mar 26 17:54:19 yahboom kernel: [   14.365561] NVRM nvCheckFailedNoLog: Check failed: CliGetEventInfo(rpc_params->hClient, rpc_params->hEvent, &pEvent) @ dce_client_rpc.c:337
+Mar 26 17:54:22 yahboom kernel: [   17.378389] [drm:nv_drm_atomic_commit [nvidia_drm]] *ERROR* [nvidia-drm] [GPU ID 0x00020000] Flip event timeout on head 0
+Mar 26 17:54:22 yahboom kernel: [   17.502129] audit: type=1326 audit(1774518862.925:2): auid=4294967295 uid=0 gid=0 ses=4294967295 subj=kernel pid=2006 comm="cupsd" exe="/snap/cups/1171/sbin/cupsd" sig=0 arch=c00000b7 syscall=55 compat=0 ip=0xffff85edce0c code=0x50000
+Mar 26 17:54:36 yahboom kernel: [   31.279384] NVRM rpcRmApiControl_dce: NVRM_RPC_DCE: Failed RM ctrl call cmd:0x731341 result 0xffff:
+Mar 26 17:54:40 yahboom kernel: [   35.426160] NVRM rpcRmApiControl_dce: NVRM_RPC_DCE: Failed RM ctrl call cmd:0x731341 result 0xffff:
+
+=== WORKING boot: what loaded nvidia-drm (look for '[drm] [nvidia-drm]' init lines + preceding context) ===
+11344:Jul  4 10:52:09 nknu kernel: [   15.230711] fb0: switching to nvidia-drm from simple
+11347:Jul  4 10:52:09 nknu kernel: [   15.395526] nv_platform 13800000.display: [drm] fb0: nvidia-drmdrmfb frame buffer device
+12258:Jul  4 12:09:04 nknu kernel: [   13.223981] [drm] [nvidia-drm] [GPU ID 0x00020000] Loading driver
+12261:Jul  4 12:09:05 nknu kernel: [   13.799941] [drm] Initialized nvidia-drm 0.0.0 20160202 for 13800000.display on minor 1
+12263:Jul  4 12:09:05 nknu kernel: [   13.800111] fb0: switching to nvidia-drm from simple
+12266:Jul  4 12:09:05 nknu kernel: [   13.962567] nv_platform 13800000.display: [drm] fb0: nvidia-drmdrmfb frame buffer device
+13194:Jul  4 16:21:25 nknu kernel: [   13.088826] [drm] [nvidia-drm] [GPU ID 0x00020000] Loading driver
+13197:Jul  4 16:21:25 nknu kernel: [   13.671964] [drm] Initialized nvidia-drm 0.0.0 20160202 for 13800000.display on minor 1
+13199:Jul  4 16:21:25 nknu kernel: [   13.672124] fb0: switching to nvidia-drm from simple
+13202:Jul  4 16:21:26 nknu kernel: [   13.835766] nv_platform 13800000.display: [drm] fb0: nvidia-drmdrmfb frame buffer device
+14047:Jul  4 17:42:20 nknu kernel: [   13.697875] [drm] [nvidia-drm] [GPU ID 0x00020000] Loading driver
+14049:Jul  4 17:42:21 nknu kernel: [   13.968814] [drm] Initialized nvidia-drm 0.0.0 20160202 for 13800000.display on minor 1
+14892:Jul  4 17:49:02 nknu kernel: [   11.807423] [drm] [nvidia-drm] [GPU ID 0x00020000] Loading driver
+14894:Jul  4 17:49:03 nknu kernel: [   12.082247] [drm] Initialized nvidia-drm 0.0.0 20160202 for 13800000.display on minor 1
+15742:Jul  4 18:51:36 nknu kernel: [   13.233613] [drm] [nvidia-drm] [GPU ID 0x00020000] Loading driver
+15744:Jul  4 18:51:36 nknu kernel: [   13.516535] [drm] Initialized nvidia-drm 0.0.0 20160202 for 13800000.display on minor 1
+16599:Jul  4 19:51:21 nknu kernel: [   13.247733] [drm] [nvidia-drm] [GPU ID 0x00020000] Loading driver
+16602:Jul  4 19:51:22 nknu kernel: [   13.820791] [drm] Initialized nvidia-drm 0.0.0 20160202 for 13800000.display on minor 1
+16604:Jul  4 19:51:22 nknu kernel: [   13.820918] fb0: switching to nvidia-drm from simple
+16607:Jul  4 19:51:22 nknu kernel: [   13.983664] nv_platform 13800000.display: [drm] fb0: nvidia-drmdrmfb frame buffer device
+
+=== NETWORK: failing boot — NetworkManager/dhcp/link/IP lines ===
+Jul  5 19:22:06 nknu NetworkManager[795]: <info>  [1783250526.6996] agent-manager: agent[587e144f9037b207,:1.120/org.gnome.Shell.NetworkAgent/128]: agent registered
+Jul  5 19:27:16 nknu NetworkManager[795]: <info>  [1783250836.6425] agent-manager: agent[3c450b6ea6dd596a,:1.149/org.gnome.Shell.NetworkAgent/128]: agent registered
+Jul  5 19:29:37 nknu NetworkManager[795]: <info>  [1783250977.5542] agent-manager: agent[b03aca0067e07214,:1.195/org.gnome.Shell.NetworkAgent/128]: agent registered
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.0083] NetworkManager (version 1.36.6) is starting... (for the first time)
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.0087] Read config: /etc/NetworkManager/NetworkManager.conf (lib: 10-dns-resolved.conf, 20-connectivity-ubuntu.conf, no-mac-addr-change.conf) (etc: 10-globally-managed-devices.conf, default-wifi-powersave-on.conf)
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.0155] bus-manager: acquired D-Bus service "org.freedesktop.NetworkManager"
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.0249] manager[0xaaaaf2f94000]: monitoring kernel firmware directory '/lib/firmware'.
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.0250] monitoring ifupdown state file '/run/network/ifstate'.
+Jul  5 19:27:57 nknu dbus-daemon[798]: [system] Activating systemd to hand-off: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.2' (uid=0 pid=799 comm="/usr/sbin/NetworkManager --no-daemon " label="kernel")
+Jul  5 19:27:57 nknu avahi-daemon[796]: Joining mDNS multicast group on interface lo.IPv6 with address ::1.
+Jul  5 19:27:57 nknu avahi-daemon[796]: Joining mDNS multicast group on interface lo.IPv4 with address 127.0.0.1.
+Jul  5 19:27:57 nknu avahi-daemon[796]: Registering new address record for ::1 on lo.*.
+Jul  5 19:27:57 nknu avahi-daemon[796]: Registering new address record for 127.0.0.1 on lo.IPv4.
+Jul  5 19:27:57 nknu kernel: [    7.092169] r8168 0008:01:00.0 eno1: renamed from eth0
+Jul  5 19:27:57 nknu kernel: [    7.149460] rtl88x2ce 0001:01:00.0 wlP1p1s0: renamed from wlan0
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.2189] hostname: hostname: using hostnamed
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.2190] hostname: static hostname changed from (none) to "nknu"
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.2203] dns-mgr[0xaaaaf2f6caa0]: init: dns=systemd-resolved rc-manager=unmanaged (auto), plugin=systemd-resolved
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.2224] rfkill0: found Wi-Fi radio killswitch (at /sys/devices/platform/bus@0/14100000.pcie/pci0001:00/0001:00:00.0/0001:01:00.0/ieee80211/phy0/rfkill0) (driver rtl88x2ce)
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.2228] manager[0xaaaaf2f94000]: rfkill: Wi-Fi hardware radio set enabled
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.2228] manager[0xaaaaf2f94000]: rfkill: WWAN hardware radio set enabled
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.2275] Loaded device plugin: NMTeamFactory (/usr/lib/aarch64-linux-gnu/NetworkManager/1.36.6/libnm-device-plugin-team.so)
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.2285] Loaded device plugin: NMAtmManager (/usr/lib/aarch64-linux-gnu/NetworkManager/1.36.6/libnm-device-plugin-adsl.so)
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.2317] Loaded device plugin: NMBluezManager (/usr/lib/aarch64-linux-gnu/NetworkManager/1.36.6/libnm-device-plugin-bluetooth.so)
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.2338] Loaded device plugin: NMWifiFactory (/usr/lib/aarch64-linux-gnu/NetworkManager/1.36.6/libnm-device-plugin-wifi.so)
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.2344] Loaded device plugin: NMWwanFactory (/usr/lib/aarch64-linux-gnu/NetworkManager/1.36.6/libnm-device-plugin-wwan.so)
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.2351] manager: rfkill: Wi-Fi enabled by radio killswitch; enabled by state file
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.2354] manager: rfkill: WWAN enabled by radio killswitch; enabled by state file
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.2355] manager: Networking is enabled by state file
+Jul  5 19:27:57 nknu dbus-daemon[798]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.2' (uid=0 pid=799 comm="/usr/sbin/NetworkManager --no-daemon " label="kernel")
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.2382] settings: Loaded settings plugin: ifupdown ("/usr/lib/aarch64-linux-gnu/NetworkManager/1.36.6/libnm-settings-plugin-ifupdown.so")
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.2383] settings: Loaded settings plugin: keyfile (internal)
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.2383] ifupdown: management mode: unmanaged
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.2386] ifupdown: interfaces file /etc/network/interfaces doesn't exist
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.2479] dhcp-init: Using DHCP client 'internal'
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.2480] device (lo): carrier: link connected
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.2483] manager: (lo): new Generic device (/org/freedesktop/NetworkManager/Devices/1)
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.2504] manager: (can0): new Generic device (/org/freedesktop/NetworkManager/Devices/2)
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.2517] manager: (eno1): new Ethernet device (/org/freedesktop/NetworkManager/Devices/3)
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.2531] settings: (eno1): created default wired connection 'Wired connection 1'
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.2532] device (eno1): state change: unmanaged -> unavailable (reason 'managed', sys-iface-state: 'external')
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.3149] device (wlP1p1s0): driver supports Access Point (AP) mode
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.3165] manager: (wlP1p1s0): new 802.11 Wi-Fi device (/org/freedesktop/NetworkManager/Devices/4)
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.3170] device (wlP1p1s0): state change: unmanaged -> unavailable (reason 'managed', sys-iface-state: 'external')
+Jul  5 19:27:57 nknu networkd-dispatcher[808]: ERROR:Unknown state for interface NetworkctlListState(idx=3, name='wlP1p1s0', type='wlan', operational='n/a', administrative='unmanaged'): n/a
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.7090] failed to open /run/network/ifstate
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.7099] manager: kernel firmware directory '/lib/firmware' changed
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.7218] manager: (l4tbr0): new Bridge device (/org/freedesktop/NetworkManager/Devices/5)
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.7246] manager: (usb0): new Ethernet device (/org/freedesktop/NetworkManager/Devices/6)
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.7271] manager: (usb1): new Ethernet device (/org/freedesktop/NetworkManager/Devices/7)
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.7292] modem-manager: ModemManager available
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.8024] device (wlP1p1s0): supplicant interface state: internal-starting -> disconnected
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.8025] Wi-Fi P2P device controlled by interface wlP1p1s0 created
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.8028] manager: (p2p-dev-wlP1p1s0): new 802.11 Wi-Fi P2P device (/org/freedesktop/NetworkManager/Devices/8)
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.8033] device (p2p-dev-wlP1p1s0): state change: unmanaged -> unavailable (reason 'managed', sys-iface-state: 'external')
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.8040] device (wlP1p1s0): state change: unavailable -> disconnected (reason 'supplicant-available', sys-iface-state: 'managed')
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.8050] device (p2p-dev-wlP1p1s0): state change: unavailable -> disconnected (reason 'none', sys-iface-state: 'managed')
+Jul  5 19:27:58 nknu NetworkManager[799]: <info>  [1783250878.5581] manager: NetworkManager state is now CONNECTED_LOCAL
+Jul  5 19:28:01 nknu NetworkManager[799]: <info>  [1783250881.4156] device (eno1): carrier: link connected
+Jul  5 19:28:01 nknu NetworkManager[799]: <info>  [1783250881.4161] device (eno1): state change: unavailable -> disconnected (reason 'carrier-changed', sys-iface-state: 'managed')
+Jul  5 19:28:01 nknu NetworkManager[799]: <info>  [1783250881.4168] policy: auto-activating connection 'Wired connection 1' (c7c92bb5-38dc-36ba-b6f9-5968f8d95a18)
+Jul  5 19:28:01 nknu NetworkManager[799]: <info>  [1783250881.4174] device (eno1): Activation: starting connection 'Wired connection 1' (c7c92bb5-38dc-36ba-b6f9-5968f8d95a18)
+Jul  5 19:28:01 nknu NetworkManager[799]: <info>  [1783250881.4175] device (eno1): state change: disconnected -> prepare (reason 'none', sys-iface-state: 'managed')
+Jul  5 19:28:01 nknu kernel: [   13.649639] IPv6: ADDRCONF(NETDEV_CHANGE): eno1: link becomes ready
+Jul  5 19:28:01 nknu NetworkManager[799]: <info>  [1783250881.4178] manager: NetworkManager state is now CONNECTING
+Jul  5 19:28:01 nknu NetworkManager[799]: <info>  [1783250881.4180] device (eno1): state change: prepare -> config (reason 'none', sys-iface-state: 'managed')
+Jul  5 19:28:01 nknu NetworkManager[799]: <info>  [1783250881.4188] device (eno1): state change: config -> ip-config (reason 'none', sys-iface-state: 'managed')
+Jul  5 19:28:01 nknu NetworkManager[799]: <info>  [1783250881.4194] dhcp4 (eno1): activation: beginning transaction (timeout in 45 seconds)
+Jul  5 19:28:01 nknu avahi-daemon[796]: Joining mDNS multicast group on interface eno1.IPv6 with address fe80::93d1:6593:51ff:7cd.
+Jul  5 19:28:01 nknu avahi-daemon[796]: Registering new address record for fe80::93d1:6593:51ff:7cd on eno1.*.
+Jul  5 19:28:01 nknu NetworkManager[799]: <info>  [1783250881.4654] dhcp4 (eno1): state changed new lease, address=192.168.0.39
+Jul  5 19:28:01 nknu avahi-daemon[796]: Joining mDNS multicast group on interface eno1.IPv4 with address 192.168.0.39.
+Jul  5 19:28:01 nknu avahi-daemon[796]: Registering new address record for 192.168.0.39 on eno1.IPv4.
+Jul  5 19:28:01 nknu NetworkManager[799]: <info>  [1783250881.4674] device (eno1): state change: ip-config -> ip-check (reason 'none', sys-iface-state: 'managed')
+Jul  5 19:28:01 nknu NetworkManager[799]: <info>  [1783250881.4715] device (eno1): state change: ip-check -> secondaries (reason 'none', sys-iface-state: 'managed')
+Jul  5 19:28:01 nknu NetworkManager[799]: <info>  [1783250881.4717] device (eno1): state change: secondaries -> activated (reason 'none', sys-iface-state: 'managed')
+Jul  5 19:28:01 nknu NetworkManager[799]: <info>  [1783250881.4722] manager: NetworkManager state is now CONNECTED_LOCAL
+Jul  5 19:28:01 nknu NetworkManager[799]: <info>  [1783250881.4726] manager: NetworkManager state is now CONNECTED_SITE
+Jul  5 19:28:01 nknu NetworkManager[799]: <info>  [1783250881.4727] policy: set 'Wired connection 1' (eno1) as default for IPv4 routing and DNS
+Jul  5 19:28:01 nknu NetworkManager[799]: <info>  [1783250881.4735] device (eno1): Activation: successful, device activated.
+Jul  5 19:28:01 nknu wpa_supplicant[913]: wlP1p1s0: CTRL-EVENT-REGDOM-CHANGE init=DRIVER type=WORLD
+Jul  5 19:28:01 nknu NetworkManager[799]: <info>  [1783250881.6799] manager: startup complete
+Jul  5 19:28:02 nknu NetworkManager[799]: <info>  [1783250882.3346] manager: NetworkManager state is now CONNECTED_GLOBAL
+Jul  5 19:28:03 nknu NetworkManager[799]: <info>  [1783250883.3425] dhcp6 (eno1): activation: beginning transaction (timeout in 45 seconds)
+Jul  5 19:28:03 nknu NetworkManager[799]: <info>  [1783250883.3434] policy: set 'Wired connection 1' (eno1) as default for IPv6 routing and DNS
+Jul  5 19:28:03 nknu avahi-daemon[796]: Joining mDNS multicast group on interface eno1.IPv6 with address 2407:4d00:cc00:e15:e562:bbcb:d99f:2ae6.
+Jul  5 19:28:03 nknu avahi-daemon[796]: Registering new address record for 2407:4d00:cc00:e15:e562:bbcb:d99f:2ae6 on eno1.*.
+Jul  5 19:28:03 nknu avahi-daemon[796]: Withdrawing address record for fe80::93d1:6593:51ff:7cd on eno1.
+Jul  5 19:28:03 nknu NetworkManager[799]: <info>  [1783250883.4109] dhcp6 (eno1): state changed new lease, address=2407:4d00:cc00:e15:ff:ff:fe:9088
+Jul  5 19:28:03 nknu avahi-daemon[796]: Registering new address record for 2407:4d00:cc00:e15:ff:ff:fe:9088 on eno1.*.
+Jul  5 19:28:05 nknu avahi-daemon[796]: Registering new address record for 2407:4d00:cc00:e15:735:fbc9:b5d9:f95a on eno1.*.
+Jul  5 19:28:11 nknu NetworkManager[799]: <info>  [1783250891.9084] agent-manager: agent[37c56dbef82335bc,:1.65/org.gnome.Shell.NetworkAgent/1000]: agent registered
+Jul  5 19:28:13 nknu systemd[1]: NetworkManager-dispatcher.service: Deactivated successfully.
+
+=== NETWORK: interfaces persistent names / MACs seen by udev ===
+Jul  5 19:22:04 nknu /usr/libexec/gdm-x-session[4379]: (--) Log file renamed from "/var/log/Xorg.pid-4379.log" to "/var/log/Xorg.1.log"
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (--) Log file renamed from "/var/log/Xorg.pid-5184.log" to "/var/log/Xorg.1.log"
+Jul  5 19:29:35 nknu /usr/libexec/gdm-x-session[5934]: (--) Log file renamed from "/var/log/Xorg.pid-5934.log" to "/var/log/Xorg.1.log"
+Jul  5 19:27:57 nknu kernel: [    6.279384] r8168 0008:01:00.0: Adding to iommu group 30
+Jul  5 19:27:57 nknu kernel: [    6.279495] r8168 Gigabit Ethernet driver 8.053.00-NAPI loaded
+Jul  5 19:27:57 nknu kernel: [    6.279583] r8168 0008:01:00.0: enabling device (0000 -> 0003)
+Jul  5 19:27:57 nknu kernel: [    6.326467] r8168: This product is covered by one or more of the following patents: US6,570,884, US6,115,776, and US6,327,625.
+Jul  5 19:27:57 nknu kernel: [    6.331325] r8168  Copyright (C) 2024 Realtek NIC software team <nicfae@realtek.com> 
+Jul  5 19:27:57 nknu kernel: [    6.350555] rtl88x2ce 0001:01:00.0: Adding to iommu group 8
+Jul  5 19:27:57 nknu kernel: [    6.352231] rtl88x2ce 0001:01:00.0: enabling device (0000 -> 0003)
+Jul  5 19:27:57 nknu kernel: [    6.710444] Bluetooth: hci0: RTL: examining hci_ver=0a hci_rev=000c lmp_ver=0a lmp_subver=8822
+Jul  5 19:27:57 nknu kernel: [    6.711411] Bluetooth: hci0: RTL: rom_version status=0 version=3
+Jul  5 19:27:57 nknu kernel: [    6.711417] Bluetooth: hci0: RTL: loading rtl_bt/rtl8822cu_fw.bin
+Jul  5 19:27:57 nknu kernel: [    6.712870] Bluetooth: hci0: RTL: loading rtl_bt/rtl8822cu_config.bin
+Jul  5 19:27:57 nknu kernel: [    6.713083] Bluetooth: hci0: RTL: cfg_sz 6, total sz 35086
+Jul  5 19:27:57 nknu kernel: [    6.726960] rtk_btusb: Realtek Bluetooth USB driver ver 3.1.6fd4e69.20220818-105856
+Jul  5 19:27:57 nknu kernel: [    7.092169] r8168 0008:01:00.0 eno1: renamed from eth0
+Jul  5 19:27:57 nknu kernel: [    7.149460] rtl88x2ce 0001:01:00.0 wlP1p1s0: renamed from wlan0
+Jul  5 19:27:57 nknu kernel: [    7.194415] Bluetooth: hci0: RTL: fw version 0x19b76d7d
+Jul  5 19:27:57 nknu NetworkManager[799]: <info>  [1783250877.2224] rfkill0: found Wi-Fi radio killswitch (at /sys/devices/platform/bus@0/14100000.pcie/pci0001:00/0001:00:00.0/0001:01:00.0/ieee80211/phy0/rfkill0) (driver rtl88x2ce)
+
+=== done ===

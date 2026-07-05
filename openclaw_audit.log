@@ -1,0 +1,716 @@
+=== openclaw audit 2026-07-05T20:16:51+08:00 (SSD mounted read-only) ===
+
+=== 1. WHEN was it installed (timestamps) ===
+2026-03-18 09:44:32.304686669 +0800  birth | 2026-03-18 09:44:50.481608494 +0800  mtime | /mnt/jetson-ssd/home/jetson/.npm-global/lib/node_modules/openclaw
+2026-03-18 09:44:53.601757725 +0800  birth | 2026-03-18 09:44:53.601757725 +0800  mtime | /mnt/jetson-ssd/home/jetson/.npm-global/bin/openclaw
+2026-03-18 09:47:57.711680754 +0800  birth | 2026-07-05 19:20:33.233683028 +0800  mtime | /mnt/jetson-ssd/home/jetson/.openclaw
+2026-03-26 17:55:13.146160487 +0800  birth | 2026-03-26 17:55:13.170161546 +0800  mtime | /mnt/jetson-ssd/home/jetson/.openclaw/openclaw.json
+2026-03-18 09:48:44.900691470 +0800  birth | 2026-03-18 09:48:52.436843361 +0800  mtime | /mnt/jetson-ssd/home/jetson/.openclaw/identity
+2026-03-18 09:48:44.172676673 +0800  birth | 2026-03-18 09:48:44.172676673 +0800  mtime | /mnt/jetson-ssd/home/jetson/.config/systemd/user/openclaw-gateway.service
+2026-03-18 09:48:44.544684234 +0800  birth | 2026-03-18 09:48:44.544684234 +0800  mtime | /mnt/jetson-ssd/home/jetson/.config/systemd/user/default.target.wants/openclaw-gateway.service
+
+=== 2. npm activity logs (dates + openclaw mentions) ===
+總用量 52
+drwxrwxr-x 2 frank frank 4096 2026-07-05 09:16:07.400169231 +0800 .
+drwxrwxr-x 5 frank frank 4096 2026-03-20 16:33:16.058268595 +0800 ..
+-rw-rw-r-- 1 frank frank 1383 2026-07-03 23:18:38.768695582 +0800 2026-07-01T05_59_46_300Z-debug-0.log
+-rw-rw-r-- 1 frank frank 3665 2026-07-03 23:46:16.999058795 +0800 2026-07-03T15_43_52_908Z-debug-0.log
+-rw-rw-r-- 1 frank frank 1383 2026-07-03 23:46:16.479046029 +0800 2026-07-03T15_44_00_120Z-debug-0.log
+-rw-rw-r-- 1 frank frank  816 2026-07-03 23:44:02.419696424 +0800 2026-07-03T15_44_02_337Z-debug-0.log
+-rw-rw-r-- 1 frank frank 1383 2026-07-04 12:08:47.317295777 +0800 2026-07-04T04_06_22_780Z-debug-0.log
+-rw-rw-r-- 1 frank frank 1383 2026-07-04 12:08:46.861286325 +0800 2026-07-04T04_06_30_598Z-debug-0.log
+-rw-rw-r-- 1 frank frank 1383 2026-07-04 16:18:58.052672745 +0800 2026-07-04T08_08_26_298Z-debug-0.log
+-rw-rw-r-- 1 frank frank 1383 2026-07-04 16:18:57.708665696 +0800 2026-07-04T08_08_40_186Z-debug-0.log
+-rw-rw-r-- 1 frank frank 1383 2026-07-05 10:04:29.749438162 +0800 2026-07-05T01_15_48_388Z-debug-0.log
+-rw-rw-r-- 1 frank frank  816 2026-07-05 09:15:52.903793186 +0800 2026-07-05T01_15_52_794Z-debug-0.log
+-rw-rw-r-- 1 frank frank 1383 2026-07-05 10:04:29.349429425 +0800 2026-07-05T01_16_06_790Z-debug-0.log
+
+=== 3. OpenClaw's own metadata ===
+-- identity:
+總用量 16
+drwxrwxr-x  2 frank frank 4096  3月 18 09:48 .
+drwx------ 14 frank frank 4096  7月  5 19:20 ..
+-rw-------  1 frank frank   52  3月 26 17:52 device-auth.json
+-rw-------  1 frank frank  101  3月 26 17:52 device.json
+-- /mnt/jetson-ssd/home/jetson/.openclaw/identity/device-auth.json:
+{
+  "version": 1,
+  "deviceId": "",
+  "tokens": {}
+}
+-- /mnt/jetson-ssd/home/jetson/.openclaw/identity/device.json:
+{
+  "version": 1,
+  "deviceId": "",
+  "publicKeyPem": "",
+  "privateKeyPem": "",
+  "createdAtMs": 0
+}
+-- devices:
+總用量 16
+drwxrwxr-x  2 frank frank 4096  3月 26 10:10 .
+drwx------ 14 frank frank 4096  7月  5 19:20 ..
+-rw-------  1 frank frank    3  3月 26 17:52 paired.json
+-rw-------  1 frank frank    2  3月 26 10:10 pending.json
+-- openclaw.json (secrets redacted):
+{
+  "meta": {
+    "lastTouchedVersion": "2026.3.13",
+    "lastTouchedAt": "2026-03-26T09:52:51.526Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-03-26T02:13:09.582Z",
+    "lastRunVersion": "2026.3.13",
+    "lastRunCommand": "onboard",
+    "lastRunMode": "local"
+  },
+  "auth": {
+    "profiles": {
+      "openrouter:default": {
+        "provider": "openrouter",
+        "mode": "api_key"
+      }
+    }
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "codingplan": {
+        "baseUrl": "https://coding.dashscope.aliyuncs.com/v1",
+        "apiKey": "",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "qwen3.5-plus",
+            "name": "qwen3.5-plus",
+            "reasoning": false,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 1000000,
+            "maxTokens": 65536,
+            "compat": {
+              "thinkingFormat": "qwen"
+            }
+          },
+          {
+            "id": "qwen3-max-2026-01-23",
+            "name": "qwen3-max-2026-01-23",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 262144,
+            "maxTokens": 65536,
+            "compat": {
+              "thinkingFormat": "qwen"
+            }
+          },
+          {
+            "id": "qwen3-coder-next",
+            "name": "qwen3-coder-next",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 262144,
+            "maxTokens": 65536
+          },
+          {
+            "id": "qwen3-coder-plus",
+            "name": "qwen3-coder-plus",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 1000000,
+            "maxTokens": 65536
+          },
+          {
+            "id": "MiniMax-M2.5",
+            "name": "MiniMax-M2.5",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 196608,
+            "maxTokens": 32768
+          },
+          {
+            "id": "glm-5",
+            "name": "glm-5",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 202752,
+            "maxTokens": 16384,
+            "compat": {
+              "thinkingFormat": "qwen"
+            }
+          },
+          {
+            "id": "glm-4.7",
+            "name": "glm-4.7",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 202752,
+            "maxTokens": 16384,
+            "compat": {
+              "thinkingFormat": "qwen"
+            }
+          },
+          {
+            "id": "kimi-k2.5",
+            "name": "kimi-k2.5",
+            "reasoning": false,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 262144,
+            "maxTokens": 32768,
+            "compat": {
+              "thinkingFormat": "qwen"
+            }
+          }
+        ]
+      },
+      "bailian": {
+        "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+        "apiKey": "",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "qwen3.5-plus",
+            "name": "qwen3.5-plus",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 1000000,
+            "maxTokens": 65536
+          },
+          {
+            "id": "qwen3-coder-next",
+            "name": "qwen3-coder-next",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 262144,
+            "maxTokens": 65536
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "bailian/qwen3.5-plus"
+      },
+      "models": {
+        "openrouter/auto": {
+          "alias": "OpenRouter"
+        },
+        "openrouter/openrouter/free": {},
+        "codingplan/qwen3.5-plus": {},
+        "codingplan/qwen3-max-2026-01-23": {},
+        "codingplan/qwen3-coder-next": {},
+        "codingplan/qwen3-coder-plus": {},
+        "codingplan/MiniMax-M2.5": {},
+        "codingplan/glm-5": {},
+        "codingplan/glm-4.7": {},
+        "codingplan/kimi-k2.5": {},
+        "bailian/qwen3.5-plus": {},
+        "bailian/qwen3-coder-next": {},
+        "bailian/qwen3-coder-plus": {}
+      },
+      "workspace": "/home/jetson/.openclaw/workspace",
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      }
+    }
+  },
+  "tools": {
+    "profile": "coding",
+    "sessions": {
+      "visibility": "all"
+    }
+  },
+  "messages": {
+    "ackReactionScope": "group-mentions"
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "channels": {
+    "whatsapp": {
+      "enabled": true,
+      "dmPolicy": "allowlist",
+      "selfChatMode": true,
+      "allowFrom": [
+        "+86xxxxxxxxxx"
+      ],
+      "groupPolicy": "allowlist",
+      "debounceMs": 0,
+      "mediaMaxMb": 50
+    },
+    "qqbot": {
+      "enabled": true,
+      "allowFrom": [
+        "*"
+      ],
+      "appId": "",
+      "clientSecret": ""
+    },
+    "feishu": {
+      "enabled": true,
+      "appId": "xxxxxxxxxxxxxxxxxxxx",
+      "appSecret": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "domain": "feishu",
+      "connectionMode": "websocket",
+      "requireMention": true,
+      "dmPolicy": "allowlist",
+      "groupPolicy": "open",
+      "allowFrom": [
+        "ou_f8a7f30c534fcc4ed94f4d64f1f2d45d",
+        "ou_7e4f057358af83d7cde2c10c0a8a9a9d"
+      ],
+      "groupAllowFrom": []
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "lan",
+    "controlUi": {
+      "allowedOrigins": [
+        "http://localhost:18789",
+        "http://127.0.0.1:18789"
+      ]
+    },
+    "auth": {
+      "mode": "token",
+      "token": "REDACTED"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    },
+    "nodes": {
+      "denyCommands": [
+        "camera.snap",
+        "camera.clip",
+        "screen.record",
+        "contacts.add",
+        "calendar.add",
+        "reminders.add",
+        "sms.send"
+      ]
+    }
+  },
+  "plugins": {
+    "allow": [
+      "openclaw-qqbot",
+      "openclaw-lark",
+      "whatsapp"
+    ],
+    "entries": {
+      "openclaw-qqbot": {
+        "enabled": true
+      },
+      "feishu": {
+        "enabled": false
+      },
+      "openclaw-lark": {
+        "enabled": true
+      },
+      "whatsapp": {
+        "enabled": true
+      }
+    },
+    "installs": {
+      "openclaw-qqbot": {
+        "source": "npm",
+        "spec": "@tencent-connect/openclaw-qqbot@latest",
+        "installPath": "/home/jetson/.openclaw/extensions/openclaw-qqbot",
+        "version": "1.5.7",
+        "resolvedName": "@tencent-connect/openclaw-qqbot",
+        "resolvedVersion": "1.5.7",
+        "resolvedSpec": "@tencent-connect/openclaw-qqbot@1.5.7",
+        "integrity": "sha512-L7FmpZFRCPE8rx5T4QXeAKfoOv+UTkOBIyIcur4VPR4WVfEWAN+GMCa88VZYUf89zy834BaNzJNkHbYdasMqIg==",
+        "shasum": "e9ecfe9edd661bad52c78d01abd4f0817f3cbfae",
+        "resolvedAt": "2026-03-13T08:55:27.699Z",
+        "installedAt": "2026-03-13T08:56:49.456Z"
+      },
+      "openclaw-lark": {
+        "source": "npm",
+        "spec": "@larksuite/openclaw-lark",
+        "installPath": "/home/jetson/.openclaw/extensions/openclaw-lark",
+        "version": "2026.3.17",
+        "resolvedName": "@larksuite/openclaw-lark",
+        "resolvedVersion": "2026.3.17",
+        "resolvedSpec": "@larksuite/openclaw-lark@2026.3.17",
+        "integrity": "sha512-7GxqBu7jIe0jmApQXt/9hpvorV04Vpqkcr9LvAOMZJzbhmI0+XZKVJgvzw0Ypxz+UfWJ9tlcSw7WpkBcyqvo8g==",
+        "shasum": "407d4616186cf776c21cf49aa533b80c2ef23530",
+        "resolvedAt": "2026-03-20T08:45:40.584Z",
+        "installedAt": "2026-03-20T08:46:14.477Z"
+      }
+    }
+  }
+}
+-- credentials dir (names only):
+/mnt/jetson-ssd/home/jetson/.openclaw/credentials/:
+總用量 12
+drwxrwxr-x  3 frank frank 4096  3月 20 19:39 .
+drwx------ 14 frank frank 4096  7月  5 19:20 ..
+drwxrwxr-x  3 frank frank 4096  3月 26 10:11 whatsapp
+
+/mnt/jetson-ssd/home/jetson/.openclaw/credentials/whatsapp:
+總用量 48
+drwxrwxr-x 3 frank frank  4096  3月 26 10:11 .
+drwxrwxr-x 3 frank frank  4096  3月 20 19:39 ..
+drwxrwxr-x 2 frank frank 36864  3月 26 17:46 default
+
+/mnt/jetson-ssd/home/jetson/.openclaw/credentials/whatsapp/default:
+總用量 3368
+drwxrwxr-x 2 frank frank 36864  3月 26 17:46 .
+drwxrwxr-x 3 frank frank  4096  3月 26 10:11 ..
+-rw-rw-r-- 1 frank frank   160  3月 26 10:12 app-state-sync-key-AAAAAEl7.json
+-rw-rw-r-- 1 frank frank   898  3月 26 11:45 app-state-sync-version-regular_high.json
+-rw-rw-r-- 1 frank frank  1954  3月 26 11:45 app-state-sync-version-regular_low.json
+-rw------- 1 frank frank  1905  3月 26 12:16 creds.json
+-rw-rw-r-- 1 frank frank    15  3月 26 10:18 device-list-139797142237274.json
+-rw-rw-r-- 1 frank frank     6  3月 26 12:16 device-list-8615338857526.json
+-rw-rw-r-- 1 frank frank    15  3月 26 10:12 lid-mapping-139797142237274_reverse.json
+-rw-rw-r-- 1 frank frank    14  3月 26 10:13 lid-mapping-157779935383608_reverse.json
+-rw-rw-r-- 1 frank frank    13  3月 26 11:43 lid-mapping-159562363609193_reverse.json
+-rw-rw-r-- 1 frank frank    15  3月 26 10:17 lid-mapping-168165854175323_reverse.json
+-rw-rw-r-- 1 frank frank    17  3月 26 11:43 lid-mapping-22579597019.json
+-rw-rw-r-- 1 frank frank    17  3月 26 10:13 lid-mapping-573196568766.json
+-rw-rw-r-- 1 frank frank    17  3月 26 10:17 lid-mapping-8615338815798.json
+-rw-rw-r-- 1 frank frank    17  3月 26 10:12 lid-mapping-8615338857526.json
+-- cron jobs:
+總用量 16
+drwx------  3 frank frank 4096  3月 24 10:35 .
+drwx------ 14 frank frank 4096  7月  5 19:20 ..
+-rw-------  1 frank frank 2192  3月 20 19:12 jobs.json
+drwx------  2 frank frank 4096  3月 24 10:35 runs
+-- /mnt/jetson-ssd/home/jetson/.openclaw/cron/jobs.json:
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "0c2422d0-4fc8-4ddb-9b65-c3fe9271a3ec",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "QQ 消息",
+      "enabled": false,
+      "deleteAfterRun": true,
+      "createdAtMs": 1773994125552,
+      "updatedAtMs": 1773994127652,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-03-20T08:08:10.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "发送以下内容到 QQ（不要添加任何其他文字）：\n\n你是谁\n\n只输出上面内容，不要说其他话。"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "qqbot",
+        "to": "qqbot:c2c:B0025C2739D9DB117D315C84F6B011D9"
+      },
+      "state": {
+        "lastRunAtMs": 1773994127582,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 70,
+        "lastError": "TypeError: allowFrom.map is not a function",
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1
+      }
+    },
+    {
+      "id": "58cd74ac-8167-438c-9e52-028bb35e8f7a",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "QQ 消息",
+      "enabled": false,
+      "deleteAfterRun": true,
+      "createdAtMs": 1773994375414,
+      "updatedAtMs": 1773994377453,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-03-20T08:12:10.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "发送以下内容到 QQ（不要添加任何其他文字）：\n\n你是谁\n\n只输出上面内容，不要说其他话。"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "qqbot",
+        "to": "qqbot:c2c:B0025C2739D9DB117D315C84F6B011D9"
+      },
+      "state": {
+        "lastRunAtMs": 1773994377435,
+        "lastRunStatus": "error",
+        "lastStatus": "erro
+-- oldest and newest logs:
+總用量 12
+drwx------  2 frank frank 4096 2026-03-26 17:52:51.576001351 +0800 .
+drwx------ 14 frank frank 4096 2026-07-05 19:20:33.233683028 +0800 ..
+-rw-------  1 frank frank  743 2026-03-26 17:52:51.576001351 +0800 config-audit.jsonl
+總用量 12
+drwx------  2 frank frank 4096 2026-03-26 17:52:51.576001351 +0800 .
+drwx------ 14 frank frank 4096 2026-07-05 19:20:33.233683028 +0800 ..
+-rw-------  1 frank frank  743 2026-03-26 17:52:51.576001351 +0800 config-audit.jsonl
+-- setup.sh / reset-memory.sh:
+#!/bin/bash
+# OpenClaw 一键配置脚本 / OpenClaw One-Click Setup Script
+# 用于配置阿里云百炼 API Key / For configuring Alibaba Cloud Bailian API Key
+
+set -e
+
+CONFIG_DIR="$HOME/.openclaw"
+ENV_FILE="$CONFIG_DIR/.env"
+OPENCLAW_JSON="$CONFIG_DIR/openclaw.json"
+
+echo "========================================"
+echo "  OpenClaw 配置向导 / Setup Wizard"
+echo "========================================"
+echo ""
+
+# 检查是否已有配置
+if [ -f "$ENV_FILE" ] && grep -q "DASHSCOPE_API_KEY=sk-" "$ENV_FILE" 2>/dev/null; then
+    echo "✓ 检测到已有百炼 API Key 配置 / Detected existing Bailian API Key configuration"
+    echo ""
+    read -p "是否重新配置？(y/N) / Reconfigure? (y/N) " -n 1 -r
+    echo ""
+    if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+        echo "配置已取消 / Configuration cancelled"
+        exit 0
+    fi
+fi
+
+echo "请输入阿里云百炼 API Key："
+echo "(获取地址: https://bailian.console.aliyun.com/)"
+echo ""
+echo "Please enter Alibaba Cloud Bailian API Key:"
+echo "(Get it from: https://bailian.console.aliyun.com/)"
+echo ""
+read -p "DASHSCOPE_API_KEY: " API_KEY
+
+if [ -z "$API_KEY" ]; then
+    echo "错误：API Key 不能为空 / Error: API Key cannot be empty"
+    exit 1
+fi
+
+if [[ ! "$API_KEY" == sk-* ]]; then
+    echo "警告：API Key 通常以 'sk-' 开头，请确认是否正确 / Warning: API Key usually starts with 'sk-', please verify"
+fi
+
+# 创建 .env 文件
+mkdir -p "$CONFIG_DIR"
+cat > "$ENV_FILE" << EOF
+# 阿里云百炼 AP
+=== 4. SSH login history (who got in, from where) ===
+-- /mnt/jetson-ssd/var/log/auth.log:
+-- /mnt/jetson-ssd/var/log/auth.log.1:
+-- /mnt/jetson-ssd/var/log/auth.log.2.gz:
+Mar 25 20:03:34 yahboom sshd[6675]: Accepted password for jetson from 192.168.12.26 port 1932 ssh2
+Mar 25 20:03:39 yahboom sshd[6727]: Accepted password for jetson from 192.168.12.26 port 15376 ssh2
+Mar 26 17:24:59 yahboom sshd[5581]: Accepted password for jetson from 192.168.12.61 port 57596 ssh2
+Mar 26 17:41:02 yahboom sshd[4348]: Accepted password for jetson from 192.168.2.42 port 42628 ssh2
+Mar 26 17:42:31 yahboom sshd[4486]: Accepted password for jetson from 192.168.2.42 port 43504 ssh2
+Mar 26 17:42:31 yahboom sshd[4490]: Accepted password for jetson from 192.168.2.42 port 43506 ssh2
+Mar 26 17:50:24 yahboom sshd[4130]: Accepted password for jetson from 192.168.2.42 port 11540 ssh2
+Mar 26 17:50:24 yahboom sshd[4132]: Accepted password for jetson from 192.168.2.42 port 11541 ssh2
+-- /mnt/jetson-ssd/var/log/auth.log.3.gz:
+Mar 24 12:19:00 yahboom sshd[38928]: Accepted password for jetson from 192.168.2.41 port 17942 ssh2
+Mar 24 12:19:00 yahboom sshd[38930]: Accepted password for jetson from 192.168.2.41 port 17943 ssh2
+Mar 24 12:23:38 yahboom sshd[40800]: Accepted password for jetson from 192.168.2.41 port 23038 ssh2
+Mar 24 14:09:53 yahboom sshd[79804]: Accepted password for jetson from 192.168.2.41 port 29342 ssh2
+Mar 24 14:36:30 yahboom sshd[4664]: Accepted password for jetson from 192.168.2.41 port 51278 ssh2
+Mar 24 14:37:02 yahboom sshd[4754]: Accepted password for jetson from 192.168.2.41 port 5335 ssh2
+Mar 24 14:37:02 yahboom sshd[4758]: Accepted password for jetson from 192.168.2.41 port 5392 ssh2
+Mar 24 15:23:55 yahboom sshd[21382]: Accepted password for jetson from 192.168.2.41 port 9132 ssh2
+Mar 24 15:28:16 yahboom sshd[23113]: Accepted password for jetson from 192.168.2.41 port 25129 ssh2
+Mar 24 15:28:16 yahboom sshd[23115]: Accepted password for jetson from 192.168.2.41 port 25130 ssh2
+Mar 24 17:31:58 yahboom sshd[65307]: Accepted password for jetson from 192.168.2.41 port 3433 ssh2
+Mar 24 18:03:52 yahboom sshd[67318]: Accepted password for jetson from 192.168.2.41 port 2876 ssh2
+Mar 24 18:11:08 yahboom sshd[70802]: Accepted password for jetson from 192.168.2.41 port 6483 ssh2
+Mar 24 18:38:42 yahboom sshd[3746]: Accepted password for jetson from 192.168.2.41 port 3525 ssh2
+Mar 24 18:38:42 yahboom sshd[3748]: Accepted password for jetson from 192.168.2.41 port 3526 ssh2
+Mar 24 18:38:43 yahboom sshd[3888]: Accepted password for jetson from 192.168.2.41 port 20162 ssh2
+Mar 24 18:38:44 yahboom sshd[3930]: Accepted password for jetson from 192.168.2.41 port 20163 ssh2
+Mar 24 18:51:48 yahboom sshd[3890]: Accepted password for jetson from 192.168.2.41 port 29170 ssh2
+Mar 24 18:51:48 yahboom sshd[3892]: Accepted password for jetson from 192.168.2.41 port 29171 ssh2
+Mar 24 19:03:55 yahboom sshd[9481]: Accepted password for jetson from 192.168.2.41 port 14362 ssh2
+-- /mnt/jetson-ssd/var/log/auth.log.4.gz:
+-- wtmp (last logins):
+jetson   :0           :0               Thu Jan  1 08:00    gone - no logout
+reboot   system boot  5.15.148-tegra   Thu Jan  1 08:00   still running
+jetson   pts/0        192.168.2.42     Thu Jan  1 08:00    gone - no logout
+reboot   system boot  5.15.148-tegra   Thu Jan  1 08:00 - 08:00  (00:00)
+jetson   :0           :0               Thu Jan  1 08:00    gone - no logout
+jetson   pts/0        192.168.2.41     Thu Jan  1 08:00    gone - no logout
+jetson   pts/1        192.168.12.56    Thu Jan  1 08:00    gone - no logout
+jetson   pts/0        192.168.2.28     Thu Jan  1 08:00 - 08:00  (00:00)
+192.168. ts/0jetson                    Thu Jan  1 08:00    gone - no logout
+jetson   :0           :0               Thu Jan  1 08:00 - 08:00  (00:00)
+reboot   system boot  5.15.148-tegra   Thu Jan  1 08:00 - 08:00  (00:00)
+jetson   pts/0        192.168.123.193  Thu Jan  1 08:00    gone - no logout
+reboot   system boot  5.15.148-tegra   Thu Jan  1 08:00 - 08:00  (00:00)
+jetson   :0           :0               Thu Jan  1 08:00    gone - no logout
+192.168. ts/1jetson                    Thu Jan  1 08:00    gone - no logout
+reboot   system boot  5.15.148-tegra   Thu Jan  1 08:00 - 08:00  (00:00)
+jetson   pts/1        192.168.123.193  Thu Jan  1 08:00 - 08:00  (00:00)
+reboot   system boot  5.15.148-tegra   Thu Jan  1 08:00 - 08:00  (00:00)
+reboot   system boot  5.15.148-tegra   Thu Jan  1 08:00 - 08:00  (00:00)
+reboot   system boot  5.15.148-tegra   Thu Jan  1 08:00 - 08:00  (00:00)
+
+=== 5. authorized_keys (unexpected SSH keys?) ===
+
+=== 6. system crontabs ===
+總用量 16
+drwx-wx--T 2 root  rtkit 4096  3月 24 18:39 .
+drwxr-xr-x 3 root  root  4096  1月 24  2025 ..
+-rw------- 1 frank rtkit  175  3月 24 15:17 jetson
+-rw------- 1 root  rtkit  175  3月 24 18:39 root
+-- /mnt/jetson-ssd/var/spool/cron/crontabs/jetson:
+# DO NOT EDIT THIS FILE - edit the master and reinstall.
+# (- installed on Tue Mar 24 15:17:35 2026)
+# (Cron version -- $Id: crontab.c,v 2.13 1994/01/17 03:20:37 vixie Exp $)
+-- /mnt/jetson-ssd/var/spool/cron/crontabs/root:
+# DO NOT EDIT THIS FILE - edit the master and reinstall.
+# (- installed on Tue Mar 24 18:39:57 2026)
+# (Cron version -- $Id: crontab.c,v 2.13 1994/01/17 03:20:37 vixie Exp $)
+
+=== 7. bash history tail (any hint who worked here) ===
+claude
+python3 third_party/ardupilot/Tools/autotest/sim_vehicle.py       -v ArduCopter --model=JSON --no-rebuild --console --map       -l 23.450868,120.286135,28.17,0 --add-param-file=control/no_gps.parm       --out tcp:localhost:5763
+bash control/launch_camera.sh
+source /opt/ros/humble/setup.bash
+python3 tools/record_field.py --output field_data/survey1 --stream-server
+python3 tools/record_field.py --output field_data/survey1 --stream-server 118.232.160.227
+bash control/launch_mavros_real.sh
+cd Ardupilot_no_GPS_drone_project/
+bash control/launch_mavros_real.sh
+source /opt/ros/humble/setup.bash
+bash anyloc/run_ros2_localizer.sh --headless --test
+bash detection/run_ros2_detector.sh --headless
+source /opt/ros/humble/setup.bash
+source /opt/ros/humble/setup.bash
+python3 tools/record_field.py --output field_data/survey2 --stream-server 118.232.160.227
+jtop
+sudo systemctl restart jtop.service
+jtop
+sudo systemctl restart jtop.service
+jtop
+nvd
+nvdisasm 
+claude 
+reboot
+df
+cd /media/jetson/ebabbbfe-d865-49d7-9b5e-0609de42b3bd
+ls
+cd boot/
+ls
+ls *.bak
+cd ..
+df
+cd /boot
+ls *.bak
+sudo Image Image.org
+sudo cp Image Image.org
+sudo cp initrd initrd.org
+sudo cp initrd.bak initrd
+sudo cp Image.bak Image
+reboot
+
+=== done — SSD left mounted READ-ONLY at /mnt/jetson-ssd ===

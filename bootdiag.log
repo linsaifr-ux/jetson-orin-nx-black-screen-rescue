@@ -1,0 +1,197 @@
+=== bootdiag 2026-07-05T19:45:37+08:00 — partition /dev/nvme1n1p1 ===
+
+=== extlinux.conf (as booted) ===
+TIMEOUT 30
+DEFAULT JetsonIO
+
+MENU TITLE L4T boot options
+
+LABEL primary
+      MENU LABEL primary kernel
+      LINUX /boot/Image
+      INITRD /boot/initrd.img-5.15.148-tegra
+      APPEND ${cbootargs} root=PARTUUID=e04a3889-579f-4382-80d2-91a7aa75b1ae rw rootwait rootfstype=ext4 mminit_loglevel=4 console=ttyTCU0,115200 firmware_class.path=/etc/firmware fbcon=map:0 nospectre_bhb video=efifb:off console=tty0
+
+# When testing a custom kernel, it is recommended that you create a backup of
+# the original kernel and add a new entry to this file so that the device can
+# fallback to the original kernel. To do this:
+#
+# 1, Make a backup of the original kernel
+#      sudo cp /boot/Image /boot/Image.backup
+#
+# 2, Copy your custom kernel into /boot/Image
+#
+# 3, Uncomment below menu setting lines for the original kernel
+#
+# 4, Reboot
+
+# LABEL backup
+#    MENU LABEL backup kernel
+#    LINUX /boot/Image.backup
+#    INITRD /boot/initrd
+#    APPEND ${cbootargs}
+
+LABEL JetsonIO
+	MENU LABEL Custom Header Config: <CSI Camera IMX219 Dual>
+	LINUX /boot/Image
+	FDT /boot/dtb/kernel_tegra234-p3768-0000+p3767-0000-nv-super.dtb
+	INITRD /boot/initrd.img-5.15.148-tegra
+	APPEND ${cbootargs} root=PARTUUID=e04a3889-579f-4382-80d2-91a7aa75b1ae rw rootwait rootfstype=ext4 mminit_loglevel=4 console=ttyTCU0,115200 firmware_class.path=/etc/firmware fbcon=map:0 nospectre_bhb video=efifb:off console=tty0
+	OVERLAYS /boot/tegra234-p3767-camera-p3768-imx219-dual.dtbo
+
+
+=== journal: list of boots recorded ===
+Failed to open /mnt/jetson-ssd/var/log/journal: 沒有此一檔案或目錄
+
+=== journal: LAST boot, last 150 lines ===
+Failed to open /mnt/jetson-ssd/var/log/journal: 沒有此一檔案或目錄
+
+=== journal: LAST boot, errors/warnings (priority<=3) ===
+Failed to open /mnt/jetson-ssd/var/log/journal: 沒有此一檔案或目錄
+
+=== journal: LAST boot, gdm/nvgpu/drm/nvidia lines ===
+
+=== syslog tail (fallback if journal not persistent) ===
+Jul  5 19:34:34 nknu node[1617]:       Symbol(corked): 0,
+Jul  5 19:34:34 nknu node[1617]:       Symbol(kChunkedBuffer): [],
+Jul  5 19:34:34 nknu node[1617]:       Symbol(kChunkedLength): 0,
+Jul  5 19:34:34 nknu node[1617]:       Symbol(kSocket): [TLSSocket],
+Jul  5 19:34:34 nknu node[1617]:       Symbol(kOutHeaders): [Object: null prototype],
+Jul  5 19:34:34 nknu node[1617]:       Symbol(errored): null,
+Jul  5 19:34:34 nknu node[1617]:       Symbol(kHighWaterMark): 65536,
+Jul  5 19:34:34 nknu node[1617]:       Symbol(kRejectNonStandardBodyWrites): false,
+Jul  5 19:34:34 nknu node[1617]:       Symbol(kPath): '/open-apis/bot/v3/info',
+Jul  5 19:34:34 nknu node[1617]:       Symbol(kUniqueHeaders): null
+Jul  5 19:34:34 nknu node[1617]:     },
+Jul  5 19:34:34 nknu node[1617]:     response: {
+Jul  5 19:34:34 nknu node[1617]:       status: 400,
+Jul  5 19:34:34 nknu node[1617]:       statusText: 'Bad Request',
+Jul  5 19:34:34 nknu node[1617]:       headers: [Object [AxiosHeaders]],
+Jul  5 19:34:34 nknu node[1617]:       config: [Object],
+Jul  5 19:34:34 nknu node[1617]:       request: [ClientRequest],
+Jul  5 19:34:34 nknu node[1617]:       data: [Object]
+Jul  5 19:34:34 nknu node[1617]:     },
+Jul  5 19:34:34 nknu node[1617]:     status: 400
+Jul  5 19:34:34 nknu node[1617]:   }
+Jul  5 19:34:34 nknu node[1617]: ]
+Jul  5 19:34:34 nknu node[1617]: 2026-07-05T19:34:34.378+08:00 [error]: [ '[ws]', 'code: 1000040346, system busy' ]
+Jul  5 19:34:34 nknu node[1617]: 2026-07-05T19:34:34.388+08:00 [error]: [
+Jul  5 19:34:34 nknu node[1617]:   '[ws]',
+Jul  5 19:34:34 nknu node[1617]:   "Cannot read properties of undefined (reading 'PingInterval')"
+Jul  5 19:34:34 nknu node[1617]: ]
+Jul  5 19:34:34 nknu node[1617]: 2026-07-05T19:34:34.398+08:00 [error]: [ '[ws]', 'connect failed' ]
+Jul  5 19:34:34 nknu node[1617]: 2026-07-05T19:34:34.407+08:00 [info]: [ '[ws]', 'reconnect' ]
+Jul  5 19:34:34 nknu node[1617]: 2026-07-05T19:34:34.415+08:00 [info]: [ '[ws]', 'ws client ready' ]
+Jul  5 19:34:38 nknu node[1617]: 2026-07-05T19:34:38.403+08:00 WhatsApp session logged out. Run: openclaw channels login
+Jul  5 19:34:38 nknu node[1617]: 2026-07-05T19:34:38.437+08:00 [whatsapp] [default] channel exited: {"error":{"data":{"reason":"401","location":"odn"},"isBoom":true,"isServer":false,"output":{"statusCode":401,"payload":{"statusCode":401,"error":"Unauthorized","message":"Connection Failure"},"headers":{}}},"date":"2026-07-05T11:34:38.395Z"}
+Jul  5 19:34:38 nknu node[1617]: 2026-07-05T19:34:38.447+08:00 [whatsapp] [default] auto-restart attempt 1/10 in 5s
+Jul  5 19:34:40 nknu geoclue[2700]: Service not used for 60 seconds. Shutting down..
+Jul  5 19:34:40 nknu systemd[1]: geoclue.service: Deactivated successfully.
+Jul  5 19:34:41 nknu systemd[1293]: Started Application launched by gnome-session-binary.
+Jul  5 19:34:41 nknu systemd[1293]: Started Application launched by gnome-session-binary.
+Jul  5 19:34:43 nknu node[1617]: 2026-07-05T19:34:43.627+08:00 [whatsapp] [default] starting provider (+8615338857526)
+Jul  5 19:34:49 nknu node[1617]: 2026-07-05T19:34:49.481+08:00 WhatsApp session logged out. Run: openclaw channels login
+Jul  5 19:34:49 nknu node[1617]: 2026-07-05T19:34:49.490+08:00 [whatsapp] [default] channel exited: {"error":{"data":{"reason":"401","location":"odn"},"isBoom":true,"isServer":false,"output":{"statusCode":401,"payload":{"statusCode":401,"error":"Unauthorized","message":"Connection Failure"},"headers":{}}},"date":"2026-07-05T11:34:49.477Z"}
+Jul  5 19:34:49 nknu node[1617]: 2026-07-05T19:34:49.501+08:00 [whatsapp] [default] auto-restart attempt 2/10 in 11s
+Jul  5 19:34:58 nknu node[1617]: 2026-07-05T19:34:58.547+08:00 [error]: [ '[ws]', 'code: 1000040346, system busy' ]
+Jul  5 19:34:58 nknu node[1617]: 2026-07-05T19:34:58.556+08:00 [error]: [
+Jul  5 19:34:58 nknu node[1617]:   '[ws]',
+Jul  5 19:34:58 nknu node[1617]:   "Cannot read properties of undefined (reading 'PingInterval')"
+Jul  5 19:34:58 nknu node[1617]: ]
+Jul  5 19:34:58 nknu node[1617]: 2026-07-05T19:34:58.561+08:00 [info]: [ 'ws', 'unable to connect to the server after trying 1 times")' ]
+Jul  5 19:35:00 nknu node[1617]: 2026-07-05T19:35:00.452+08:00 [whatsapp] [default] starting provider (+8615338857526)
+Jul  5 19:35:01 nknu node[1617]: 2026-07-05T19:35:01.739+08:00 WhatsApp session logged out. Run: openclaw channels login
+Jul  5 19:35:01 nknu node[1617]: 2026-07-05T19:35:01.752+08:00 [whatsapp] [default] channel exited: {"error":{"data":{"reason":"401","location":"frc"},"isBoom":true,"isServer":false,"output":{"statusCode":401,"payload":{"statusCode":401,"error":"Unauthorized","message":"Connection Failure"},"headers":{}}},"date":"2026-07-05T11:35:01.736Z"}
+Jul  5 19:35:01 nknu node[1617]: 2026-07-05T19:35:01.762+08:00 [whatsapp] [default] auto-restart attempt 3/10 in 21s
+Jul  5 19:35:13 nknu ubuntu-appindicators@ubuntu.com[2634]: unable to update icon for software-update-available
+Jul  5 19:35:13 nknu ubuntu-appindicators@ubuntu.com[2634]: unable to update icon for livepatch
+Jul  5 19:35:22 nknu node[1617]: 2026-07-05T19:35:22.970+08:00 [whatsapp] [default] starting provider (+8615338857526)
+Jul  5 19:35:28 nknu node[1617]: 2026-07-05T19:35:28.521+08:00 WhatsApp session logged out. Run: openclaw channels login
+Jul  5 19:35:28 nknu node[1617]: 2026-07-05T19:35:28.538+08:00 [whatsapp] [default] channel exited: {"error":{"data":{"reason":"401","location":"atn"},"isBoom":true,"isServer":false,"output":{"statusCode":401,"payload":{"statusCode":401,"error":"Unauthorized","message":"Connection Failure"},"headers":{}}},"date":"2026-07-05T11:35:28.515Z"}
+Jul  5 19:35:28 nknu node[1617]: 2026-07-05T19:35:28.548+08:00 [whatsapp] [default] auto-restart attempt 4/10 in 43s
+Jul  5 19:35:41 nknu systemd[1293]: Started Application launched by gnome-session-binary.
+Jul  5 19:36:11 nknu node[1617]: 2026-07-05T19:36:11.615+08:00 [whatsapp] [default] starting provider (+8615338857526)
+Jul  5 19:36:14 nknu node[1617]: 2026-07-05T19:36:14.531+08:00 WhatsApp session logged out. Run: openclaw channels login
+Jul  5 19:36:14 nknu node[1617]: 2026-07-05T19:36:14.544+08:00 [whatsapp] [default] channel exited: {"error":{"data":{"reason":"401","location":"cco"},"isBoom":true,"isServer":false,"output":{"statusCode":401,"payload":{"statusCode":401,"error":"Unauthorized","message":"Connection Failure"},"headers":{}}},"date":"2026-07-05T11:36:14.526Z"}
+Jul  5 19:36:14 nknu node[1617]: 2026-07-05T19:36:14.552+08:00 [whatsapp] [default] auto-restart attempt 5/10 in 87s
+Jul  5 19:36:58 nknu node[1617]: 2026-07-05T19:36:58.812+08:00 [error]: [ '[ws]', 'code: 1000040346, system busy' ]
+Jul  5 19:36:58 nknu node[1617]: 2026-07-05T19:36:58.822+08:00 [error]: [
+Jul  5 19:36:58 nknu node[1617]:   '[ws]',
+Jul  5 19:36:58 nknu node[1617]:   "Cannot read properties of undefined (reading 'PingInterval')"
+Jul  5 19:36:58 nknu node[1617]: ]
+Jul  5 19:36:58 nknu node[1617]: 2026-07-05T19:36:58.828+08:00 [info]: [ 'ws', 'unable to connect to the server after trying 2 times")' ]
+Jul  5 19:37:41 nknu node[1617]: 2026-07-05T19:37:41.662+08:00 [whatsapp] [default] starting provider (+8615338857526)
+Jul  5 19:37:46 nknu node[1617]: 2026-07-05T19:37:46.401+08:00 WhatsApp session logged out. Run: openclaw channels login
+Jul  5 19:37:46 nknu node[1617]: 2026-07-05T19:37:46.417+08:00 [whatsapp] [default] channel exited: {"error":{"data":{"reason":"401","location":"cco"},"isBoom":true,"isServer":false,"output":{"statusCode":401,"payload":{"statusCode":401,"error":"Unauthorized","message":"Connection Failure"},"headers":{}}},"date":"2026-07-05T11:37:46.396Z"}
+Jul  5 19:37:46 nknu node[1617]: 2026-07-05T19:37:46.427+08:00 [whatsapp] [default] auto-restart attempt 6/10 in 168s
+Jul  5 19:38:26 nknu anacron[795]: Job `cron.daily' started
+Jul  5 19:38:26 nknu anacron[5209]: Updated timestamp for job `cron.daily' to 2026-07-05
+Jul  5 19:38:26 nknu systemd[1]: Starting Download data for packages that failed at package install time...
+Jul  5 19:38:26 nknu cracklib: no dictionary update necessary.
+Jul  5 19:38:26 nknu anacron[795]: Job `cron.daily' terminated
+Jul  5 19:38:26 nknu anacron[795]: Job `cron.weekly' started
+Jul  5 19:38:26 nknu anacron[5245]: Updated timestamp for job `cron.weekly' to 2026-07-05
+Jul  5 19:38:26 nknu systemd[1]: update-notifier-download.service: Deactivated successfully.
+Jul  5 19:38:26 nknu systemd[1]: Finished Download data for packages that failed at package install time.
+Jul  5 19:38:27 nknu lpd[5266]: restarted
+Jul  5 19:38:27 nknu anacron[795]: Job `cron.weekly' terminated
+Jul  5 19:38:27 nknu anacron[795]: Normal exit (2 jobs run)
+Jul  5 19:38:27 nknu systemd[1]: anacron.service: Killing process 5266 (lpd) with signal SIGKILL.
+Jul  5 19:38:27 nknu systemd[1]: anacron.service: Killing process 5266 (lpd) with signal SIGKILL.
+Jul  5 19:38:27 nknu systemd[1]: anacron.service: Deactivated successfully.
+Jul  5 19:38:33 nknu dbus-daemon[798]: [system] Activating via systemd: service name='org.freedesktop.timedate1' unit='dbus-org.freedesktop.timedate1.service' requested by ':1.48' (uid=0 pid=859 comm="/usr/lib/snapd/snapd " label="kernel")
+Jul  5 19:38:33 nknu systemd[1]: Starting Time & Date Service...
+Jul  5 19:38:33 nknu dbus-daemon[798]: [system] Successfully activated service 'org.freedesktop.timedate1'
+Jul  5 19:38:33 nknu systemd[1]: Started Time & Date Service.
+Jul  5 19:38:59 nknu node[1617]: 2026-07-05T19:38:59.164+08:00 [error]: [ '[ws]', 'code: 1000040346, system busy' ]
+Jul  5 19:38:59 nknu node[1617]: 2026-07-05T19:38:59.174+08:00 [error]: [
+Jul  5 19:38:59 nknu node[1617]:   '[ws]',
+Jul  5 19:38:59 nknu node[1617]:   "Cannot read properties of undefined (reading 'PingInterval')"
+Jul  5 19:38:59 nknu node[1617]: ]
+Jul  5 19:38:59 nknu node[1617]: 2026-07-05T19:38:59.182+08:00 [info]: [ 'ws', 'unable to connect to the server after trying 3 times")' ]
+Jul  5 19:39:03 nknu systemd[1]: systemd-timedated.service: Deactivated successfully.
+Jul  5 19:39:32 nknu node[1617]: 2026-07-05T19:39:32.535+08:00 [health-monitor] [whatsapp:default] health-monitor: restarting (reason: stopped)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+=== nvidia update-engine / bootloader update logs, if any ===
+總用量 170336
+drwxrwxr-x  6 root     lpadmin      4096  7月  5 19:28 .
+drwxr-xr-x 16 root     root         4096  1月 24  2025 ..
+-rw-r--r--  1 root     root            0  7月  5 19:19 alternatives.log
+-rw-r--r--  1 root     root          874  7月  5 17:36 alternatives.log.1
+-rw-r--r--  1 root     root          159  6月 29 16:31 alternatives.log.2.gz
+-rw-r--r--  1 root     root          254  3月 18 14:33 alternatives.log.3.gz
+-rw-r--r--  1 root     root          193  8月 19  2025 alternatives.log.4.gz
+-rw-r--r--  1 root     root         4544  1月 22  2025 alternatives.log.5.gz
+-rw-r-----  1 root     adm           113  7月  5 09:56 apport.log
+-rw-r-----  1 root     adm          3377  7月  4 16:18 apport.log.1
+-rw-r-----  1 root     adm           742  7月  3 23:46 apport.log.2.gz
+-rw-r-----  1 root     adm           339  7月  2 08:25 apport.log.3.gz
+-rw-r-----  1 root     adm           262  7月  1 16:38 apport.log.4.gz
+-rw-r-----  1 root     adm           731  6月 30 00:19 apport.log.5.gz
+-rw-r-----  1 root     adm          1189  6月 29 16:43 apport.log.6.gz
+-rw-r-----  1 root     adm           397  3月 25 19:28 apport.log.7.gz
+drwxr-xr-x  2 root     root         4096  7月  5 10:04 apt
+-rw-r-----  1 whoopsie adm         25269  7月  5 19:40 auth.log
+-rw-r-----  1 whoopsie adm         69035  7月  4 23:30 auth.log.1
+-rw-r-----  1 whoopsie adm          4092  3月 26 17:56 auth.log.2.gz
+-rw-r-----  1 whoopsie adm         13419  3月 24 19:03 auth.log.3.gz
+-rw-r-----  1 whoopsie adm          1343 10月 28  2025 auth.log.4.gz
+-rw-rw----  1 root     utmp            0  7月  1 13:17 btmp
+-rw-rw----  1 root     utmp            0  6月 29 15:53 btmp.1
+-rw-r-----  1 root     adm         72993  7月  5 19:28 dmesg
+-rw-r-----  1 root     adm         72225  1月  1  1970 dmesg.0
+-rw-r-----  1 root     adm         14319  7月  5 10:04 dmesg.1.gz
+-rw-r-----  1 root     adm         14314  7月  5 10:04 dmesg.2.gz
+-rw-r-----  1 root     adm         19027  7月  5 01:19 dmesg.3.gz
+-rw-r-----  1 root     adm         19039  7月  5 01:16 dmesg.4.gz
+-rw-r--r--  1 root     root       165810  7月  5 17:36 dpkg.log
+-rw-r--r--  1 root     root        15406  6月 29 23:03 dpkg.log.1
+-rw-r--r--  1 root     root          715  3月 24 19:07 dpkg.log.2.gz
+-rw-r--r--  1 root     root         8061  3月 18 14:46 dpkg.log.3.gz
+-rw-r--r--  1 root     root         1479  8月 26  2025 dpkg.log.4.gz
+-rw-r--r--  1 root     root        67507  1月 22  2025 dpkg.log.5.gz
+-rw-r--r--  1 root     root        11359  1月 22  2025 fontconfig.log
+drwx--x--x  2 root         135      4096  1月 24  2025 gdm3
+drwxr-xr-x  2 root     root         4096  1月 24  2025 installer
+
+=== done — report in /home/frank/jetson_rescue/bootdiag.log (SSD left mounted at /mnt/jetson-ssd) ===

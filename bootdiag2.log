@@ -1,0 +1,413 @@
+=== bootdiag2 2026-07-05T19:48:28+08:00 ===
+
+=== dmesg of LAST boot (19:28): drm/nvidia/nvgpu/hdmi/dp/edid/tegra display lines ===
+[    0.000000] kernel: Machine model: NVIDIA Jetson Orin NX Engineering Reference Developer Kit Super
+[    0.053147] kernel: DMI: NVIDIA NVIDIA Jetson Orin NX Engineering Reference Developer Kit Super/Jetson, BIOS 36.4.3-gcid-38968081 01/08/2025
+[    1.745488] kernel: simple-framebuffer chosen:framebuffer: fb0: simplefb registered!
+[    4.366015] systemd[1]: Using hardware watchdog 'NVIDIA Tegra186 WDT', version 0, device /dev/watchdog
+[    5.484176] systemd[1]: Starting Load Kernel Module drm...
+[    5.495343] systemd[1]: Starting NVIDIA specific first-boot udev script...
+[    5.575468] kernel: nvgpu: 17000000.gpu          nvgpu_nvhost_syncpt_init:122  [INFO]  syncpt_unit_base 60000000 syncpt_unit_size 4000000 size 10000
+[    6.129272] kernel: tegra-dce d800000.dce: Adding to iommu group 31
+[    6.129778] kernel: dce: dce_ipc_channel_init:311  Invalid Channel State [0x0] for ch_type [2]
+[    6.130079] kernel: dce: tegra_dce_probe:245  Found display consumer device
+[    6.130788] kernel: dce: dce_mailbox_set_full_interrupt:157  Intr bit set multiple times for MB : [0x5]
+[    6.130794] kernel: dce: dce_mailbox_set_full_interrupt:157  Intr bit set multiple times for MB : [0x5]
+[    6.131045] kernel: dce: dce_admin_send_cmd_ver:456  version : [0x3] err : [0x0]
+[    6.131249] kernel: dce: dce_mailbox_set_full_interrupt:157  Intr bit set multiple times for MB : [0x1]
+[    6.131255] kernel: dce: dce_mailbox_set_full_interrupt:157  Intr bit set multiple times for MB : [0x1]
+[    6.131257] kernel: dce: dce_admin_setup_clients_ipc:585  Channel Reset Complete for Type [1] ...
+[    6.131259] kernel: dce: dce_admin_setup_clients_ipc:561  Get queue info failed for [2]
+[    6.131464] kernel: dce: dce_mailbox_set_full_interrupt:157  Intr bit set multiple times for MB : [0x2]
+[    6.131471] kernel: dce: dce_mailbox_set_full_interrupt:157  Intr bit set multiple times for MB : [0x2]
+[    6.131474] kernel: dce: dce_admin_setup_clients_ipc:585  Channel Reset Complete for Type [3] ...
+[    6.132452] kernel: dce: dce_start_boot_flow:166  DCE_BOOT_DONE
+[    6.200745] kernel: nv_platform 13800000.display: Adding to iommu group 36
+[    6.230492] kernel: platform 13800000.display:nvdisplay-niso: Adding to iommu group 37
+[    6.505347] kernel: input: NVIDIA Jetson Orin NX HDA HDMI/DP,pcm=3 as /devices/platform/bus@0/3510000.hda/sound/card0/input9
+[    6.511546] kernel: input: NVIDIA Jetson Orin NX HDA HDMI/DP,pcm=7 as /devices/platform/bus@0/3510000.hda/sound/card0/input10
+[    6.515768] kernel: input: NVIDIA Jetson Orin NX HDA HDMI/DP,pcm=8 as /devices/platform/bus@0/3510000.hda/sound/card0/input11
+[    6.527602] kernel: input: NVIDIA Jetson Orin NX HDA HDMI/DP,pcm=9 as /devices/platform/bus@0/3510000.hda/sound/card0/input12
+
+=== dmesg of LAST boot: module load errors / taint / failures ===
+[    0.000000] kernel: psci: PSCIv1.1 detected in firmware.
+[    0.000000] kernel: Kernel command line: root=PARTUUID=e04a3889-579f-4382-80d2-91a7aa75b1ae rw rootwait rootfstype=ext4 mminit_loglevel=4 console=ttyTCU0,115200 firmware_class.path=/etc/firmware fbcon=map:0 nospectre_bhb video=efifb:off console=tty0 bl_prof_dataptr=2031616@0x471E10000 bl_prof_ro_ptr=65536@0x471E00000 
+[    0.179792] kernel: tegra-bpmp bpmp: firmware: dc3fd3cac60f9b918e11-da583751bbf
+[    1.821709] kernel: tegra-xusb 3610000.usb: Firmware timestamp: 2023-02-10 03:48:10 UTC
+[    2.097942] kernel: host1x: loading out-of-tree module taints kernel.
+[    2.253667] kernel: tegra-vic 15340000.vic: failed to init devfreq: -22
+[    2.253726] kernel: tegra-vic: probe of 15340000.vic failed with error -22
+[    2.259255] kernel: tegra-nvdec 15480000.nvdec: failed to init devfreq: -22
+[    2.259292] kernel: tegra-nvdec: probe of 15480000.nvdec failed with error -22
+[    2.264256] kernel: tegra-nvenc 154c0000.nvenc: failed to init devfreq: -22
+[    2.264298] kernel: tegra-nvenc: probe of 154c0000.nvenc failed with error -22
+[    2.268956] kernel: tegra-nvjpg 15380000.nvjpg: failed to init devfreq: -22
+[    2.268990] kernel: tegra-nvjpg: probe of 15380000.nvjpg failed with error -22
+[    2.273729] kernel: tegra-nvjpg 15540000.nvjpg: failed to init devfreq: -22
+[    2.273762] kernel: tegra-nvjpg: probe of 15540000.nvjpg failed with error -22
+[    2.278525] kernel: tegra-ofa 15a50000.ofa: failed to init devfreq: -22
+[    2.278574] kernel: tegra-ofa: probe of 15a50000.ofa failed with error -22
+[    2.467691] kernel: GPT: Use GNU Parted to correct GPT errors.
+[    5.689636] kernel: squashfs: SQUASHFS error: Xattrs in filesystem, these will be ignored
+[    5.689698] kernel: squashfs: SQUASHFS error: Xattrs in filesystem, these will be ignored
+[    5.694993] kernel: squashfs: SQUASHFS error: Xattrs in filesystem, these will be ignored
+[    5.697822] kernel: squashfs: SQUASHFS error: Xattrs in filesystem, these will be ignored
+[    5.730581] kernel: squashfs: SQUASHFS error: Xattrs in filesystem, these will be ignored
+[    5.733411] kernel: squashfs: SQUASHFS error: Xattrs in filesystem, these will be ignored
+[    6.131259] kernel: dce: dce_admin_setup_clients_ipc:561  Get queue info failed for [2]
+[    6.142959] kernel: tegra186-cam-rtcpu bc00000.rtcpu: firmware version cpu=rce cmd=6 sha1=e2238c99959d2df9350d393f04e1f44e5bef98cb
+[    6.561734] kernel: imx219 9-0010: imx219_board_setup: error during i2c read probe (-121)
+[    6.566839] kernel: imx219 9-0010: board setup failed
+[    6.566894] kernel: imx219: probe of 9-0010 failed with error -121
+[    6.583348] kernel: imx219 10-0010: imx219_board_setup: error during i2c read probe (-121)
+[    6.588458] kernel: imx219 10-0010: board setup failed
+[    6.588516] kernel: imx219: probe of 10-0010 failed with error -121
+
+=== syslog: boot window 19:27-19:34 — gdm/Xorg/nvidia/drm/session lines ===
+Jul  5 19:27:07 nknu node[1555]: 2026-07-05T19:27:07.463+08:00 WhatsApp session logged out. Run: openclaw channels login
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (**) Option "fd" "25"
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) event1  - Logitech Wireless Receiver Mouse: device removed
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (**) Option "fd" "27"
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) event2  - ASUSTeK ROG GLADIUS III: device removed
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (**) Option "fd" "29"
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) event3  - ASUSTeK ROG GLADIUS III Consumer Control: device removed
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (**) Option "fd" "24"
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) event4  - ASUSTeK ROG GLADIUS III System Control: device removed
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (**) Option "fd" "48"
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) event6  - ASUSTeK ROG GLADIUS III Keyboard: device removed
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (**) Option "fd" "28"
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) event7  - Apple Inc. Magic Keyboard: device removed
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (**) Option "fd" "26"
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) event0  - gpio-keys: device removed
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) systemd-logind: got pause for 13:68
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) systemd-logind: got pause for 13:65
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) systemd-logind: got pause for 13:64
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) systemd-logind: got pause for 13:66
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) systemd-logind: got pause for 13:71
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) systemd-logind: got pause for 13:67
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) systemd-logind: got pause for 13:70
+Jul  5 19:27:14 nknu systemd[5170]: Created slice User Core Session Slice.
+Jul  5 19:27:14 nknu systemd[5170]: Listening on REST API socket for snapd user session agent.
+Jul  5 19:27:14 nknu systemd[1]: Started Session c2 of User gdm.
+Jul  5 19:27:14 nknu systemd[5170]: Started PipeWire Media Session Manager.
+Jul  5 19:27:14 nknu gdm3: GLib: Source ID 79 was not found when attempting to remove it
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: _XSERVTransSocketUNIXCreateListener: ...SocketCreateListener() failed
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: _XSERVTransMakeAllCOTSServerListeners: server already running
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (--) Log file renamed from "/var/log/Xorg.pid-5184.log" to "/var/log/Xorg.1.log"
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: X.Org X Server 1.21.1.4
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: X Protocol Version 11, Revision 0
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: Current Operating System: Linux nknu 5.15.148-tegra #1 SMP PREEMPT Thu Sep 18 15:08:33 PDT 2025 aarch64
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: Kernel command line: root=PARTUUID=e04a3889-579f-4382-80d2-91a7aa75b1ae rw rootwait rootfstype=ext4 mminit_loglevel=4 console=ttyTCU0,115200 firmware_class.path=/etc/firmware fbcon=map:0 nospectre_bhb video=efifb:off console=tty0 bl_prof_dataptr=2031616@0x471E10000 bl_prof_ro_ptr=65536@0x471E00000
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: xorg-server 2:21.1.4-2ubuntu1.7~22.04.16 (For technical support please see http://www.ubuntu.com/support)
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: Current version of pixman: 0.40.0
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: #011Before reporting problems, check http://wiki.x.org
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: #011to make sure that you have the latest version.
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: Markers: (--) probed, (**) from config file, (==) default setting,
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: #011(++) from command line, (!!) notice, (II) informational,
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: #011(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (==) Log file: "/var/log/Xorg.1.log", Time: Sun Jul  5 19:27:14 2026
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (==) Using config file: "/etc/X11/xorg.conf"
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (==) Using config directory: "/etc/X11/xorg.conf.d"
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (==) No Layout section.  Using the first Screen section.
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (==) No screen section available. Using defaults.
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (**) |-->Screen "Default Screen Section" (0)
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (**) |   |-->Monitor "<default monitor>"
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (==) No device specified for screen "Default Screen Section".
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: #011Using the first device section listed.
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (**) |   |-->Device "Tegra0"
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (==) No monitor specified for screen "Default Screen Section".
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: #011Using a default monitor configuration.
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (==) Automatically adding devices
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (==) Automatically enabling devices
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (==) Automatically adding GPU devices
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (==) Automatically binding GPU devices
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (==) Max clients allowed: 256, resource mask: 0x1fffff
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: #011Entry deleted from font path.
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (WW) The directory "/usr/share/fonts/X11/100dpi/" does not exist.
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: #011Entry deleted from font path.
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (WW) The directory "/usr/share/fonts/X11/75dpi/" does not exist.
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: #011Entry deleted from font path.
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (WW) The directory "/usr/share/fonts/X11/100dpi" does not exist.
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: #011Entry deleted from font path.
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (WW) The directory "/usr/share/fonts/X11/75dpi" does not exist.
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: #011Entry deleted from font path.
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (==) FontPath set to:
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: #011/usr/share/fonts/X11/misc,
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: #011/usr/share/fonts/X11/Type1,
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: #011built-ins
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (==) ModulePath set to "/usr/lib/xorg/modules"
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (II) The server relies on udev to provide the list of input devices.
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: #011If no devices become available, reconfigure udev or disable AutoAddDevices.
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (II) Loader magic: 0xaaaad1c24010
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (II) Module ABI versions:
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: #011X.Org ANSI C Emulation: 0.4
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: #011X.Org Video Driver: 25.2
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: #011X.Org XInput driver : 24.4
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: #011X.Org Server Extension : 10.0
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (++) using VT number 1
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) systemd-logind: got resume for 13:68
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) event4  - ASUSTeK ROG GLADIUS III System Control: is tagged by udev as: Keyboard
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) event4  - ASUSTeK ROG GLADIUS III System Control: device is a keyboard
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) systemd-logind: got resume for 13:65
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) event1  - Logitech Wireless Receiver Mouse: is tagged by udev as: Mouse
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) event1  - Logitech Wireless Receiver Mouse: device is a pointer
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) systemd-logind: got resume for 13:64
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) event0  - gpio-keys: is tagged by udev as: Keyboard
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) event0  - gpio-keys: device is a keyboard
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) systemd-logind: got resume for 13:66
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) event2  - ASUSTeK ROG GLADIUS III: is tagged by udev as: Mouse
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) event2  - ASUSTeK ROG GLADIUS III: device is a pointer
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) systemd-logind: got resume for 13:71
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) event7  - Apple Inc. Magic Keyboard: is tagged by udev as: Keyboard
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) event7  - Apple Inc. Magic Keyboard: device is a keyboard
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) systemd-logind: got resume for 13:67
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) event3  - ASUSTeK ROG GLADIUS III Consumer Control: is tagged by udev as: Keyboard
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) event3  - ASUSTeK ROG GLADIUS III Consumer Control: device is a keyboard
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) systemd-logind: got resume for 13:70
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (II) systemd-logind: took control of session /org/freedesktop/login1/session/c2
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (II) no primary bus or device found
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (WW) "dri" will not be loaded unless you've specified it to be loaded elsewhere.
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (II) "glx" will be loaded by default.
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (II) LoadModule: "extmod"
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (II) Module "extmod" already built-in
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (II) LoadModule: "glx"
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) event6  - ASUSTeK ROG GLADIUS III Keyboard: is tagged by udev as: Keyboard
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) event6  - ASUSTeK ROG GLADIUS III Keyboard: device is a keyboard
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (II) Module glx: vendor="X.Org Foundation"
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: #011compiled for 1.21.1.4, module version = 1.0.0
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: #011ABI class: X.Org Server Extension, version 10.0
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (II) LoadModule: "nvidia"
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (II) Loading /usr/lib/xorg/modules/drivers/nvidia_drv.so
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (II) Module nvidia: vendor="NVIDIA Corporation"
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: #011compiled for 1.6.99.901, module version = 1.0.0
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: #011Module class: X.Org Video Driver
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (II) NVIDIA dlloader X Driver  540.4.0  Release Build  (bugfix_main)  (buildbrain@mobile-u64-6354-d6000)  Thu Sep 18 15:19:04 PDT 2025
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (II) NVIDIA Unified Driver for all Supported NVIDIA GPUs
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (**) Option "fd" "25"
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) event1  - Logitech Wireless Receiver Mouse: device removed
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (**) Option "fd" "27"
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) event2  - ASUSTeK ROG GLADIUS III: device removed
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (**) Option "fd" "29"
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) event3  - ASUSTeK ROG GLADIUS III Consumer Control: device removed
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (**) Option "fd" "24"
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) event4  - ASUSTeK ROG GLADIUS III System Control: device removed
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (**) Option "fd" "48"
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) event6  - ASUSTeK ROG GLADIUS III Keyboard: device removed
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (**) Option "fd" "28"
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) event7  - Apple Inc. Magic Keyboard: device removed
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (**) Option "fd" "26"
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[2470]: (II) event0  - gpio-keys: device removed
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (WW) Falling back to old probe method for NVIDIA
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (II) Loading sub module "fb"
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (II) LoadModule: "fb"
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (II) Module "fb" already built-in
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (II) Loading sub module "wfb"
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (II) LoadModule: "wfb"
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (II) Loading /usr/lib/xorg/modules/libwfb.so
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (II) Module wfb: vendor="X.Org Foundation"
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: #011compiled for 1.21.1.4, module version = 1.0.0
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: #011ABI class: X.Org ANSI C Emulation, version 0.4
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (WW) Falling back to old probe method for NVIDIA
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (EE) No devices detected.
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (==) Matched modesetting as autoconfigured driver 0
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: (==) Matched fbdev as autoconfigured driver 1
+
+=== syslog: boot window — all systemd Failed/Dependency lines ===
+Jul  5 19:27:14 nknu /usr/libexec/gdm-x-session[5184]: _XSERVTransSocketUNIXCreateListener: ...SocketCreateListener() failed
+Jul  5 19:27:15 nknu gnome-session[5231]: libEGL warning: DRI2: failed to authenticate
+Jul  5 19:27:15 nknu gnome-session[5202]: gnome-session-binary[5202]: GLib-GIO-CRITICAL: g_bus_get_sync: assertion 'error == NULL || *error == NULL' failed
+Jul  5 19:27:15 nknu gnome-session[5202]: gnome-session-binary[5202]: GLib-GIO-CRITICAL: g_bus_get_sync: assertion 'error == NULL || *error == NULL' failed
+Jul  5 19:27:15 nknu gnome-session-binary[5202]: GLib-GIO-CRITICAL: g_bus_get_sync: assertion 'error == NULL || *error == NULL' failed
+Jul  5 19:27:15 nknu gnome-session-binary[5202]: GLib-GIO-CRITICAL: g_bus_get_sync: assertion 'error == NULL || *error == NULL' failed
+Jul  5 19:27:15 nknu org.gnome.Shell.desktop[5254]: Window manager warning: Scalig CRTC 1311 at 1.000000 failed
+Jul  5 19:27:16 nknu org.gnome.Shell.desktop[5254]: Window manager warning: Failed to parse saved session file: Failed to open file “/var/lib/gdm3/.config/mutter/sessions/107d3687635d440a9f178325083537180600000052020000.ms”: No such file or directory
+Jul  5 19:27:16 nknu /usr/libexec/gdm-x-session[5201]: dbus-daemon[5201]: [session uid=128 pid=5201] Activated service 'org.freedesktop.systemd1' failed: Process org.freedesktop.systemd1 exited with status 1
+Jul  5 19:27:16 nknu gsd-sharing[5319]: Failed to StopUnit service: GDBus.Error:org.freedesktop.DBus.Error.Spawn.ChildExited: Process org.freedesktop.systemd1 exited with status 1
+Jul  5 19:27:16 nknu gsd-sharing[5319]: Failed to StopUnit service: GDBus.Error:org.freedesktop.DBus.Error.Spawn.ChildExited: Process org.freedesktop.systemd1 exited with status 1
+Jul  5 19:27:16 nknu gsd-color[5323]: failed to get edid: unable to get EDID for output
+Jul  5 19:27:16 nknu gsd-media-keys[5336]: Failed to grab accelerator for keybinding settings:hibernate
+Jul  5 19:27:16 nknu gsd-media-keys[5336]: Failed to grab accelerator for keybinding settings:playback-random
+Jul  5 19:27:16 nknu gsd-media-keys[5336]: Failed to grab accelerator for keybinding settings:rotate-video-lock
+Jul  5 19:27:16 nknu gsd-media-keys[5336]: Failed to grab accelerator for keybinding settings:playback-repeat
+Jul  5 19:27:17 nknu gnome-shell[5254]: JS ERROR: Failed to initialize fprintd service: Gio.IOErrorEnum: GDBus.Error:net.reactivated.Fprint.Error.NoSuchDevice: No devices available#012asyncCallback@resource:///org/gnome/gjs/modules/core/overrides/Gio.js:114:23
+Jul  5 19:27:41 nknu gdm-launch-environment]: GLib-GObject: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+Jul  5 19:29:35 nknu /usr/libexec/gdm-x-session[5934]: _XSERVTransSocketUNIXCreateListener: ...SocketCreateListener() failed
+Jul  5 19:29:35 nknu gnome-session[5973]: libEGL warning: DRI2: failed to authenticate
+Jul  5 19:29:36 nknu gnome-session[5945]: gnome-session-binary[5945]: GLib-GIO-CRITICAL: g_bus_get_sync: assertion 'error == NULL || *error == NULL' failed
+Jul  5 19:29:36 nknu gnome-session[5945]: gnome-session-binary[5945]: GLib-GIO-CRITICAL: g_bus_get_sync: assertion 'error == NULL || *error == NULL' failed
+Jul  5 19:29:36 nknu gnome-session-binary[5945]: GLib-GIO-CRITICAL: g_bus_get_sync: assertion 'error == NULL || *error == NULL' failed
+Jul  5 19:29:36 nknu gnome-session-binary[5945]: GLib-GIO-CRITICAL: g_bus_get_sync: assertion 'error == NULL || *error == NULL' failed
+Jul  5 19:29:36 nknu org.gnome.Shell.desktop[5996]: Window manager warning: Scalig CRTC 1321 at 1.000000 failed
+Jul  5 19:29:37 nknu org.gnome.Shell.desktop[5996]: Window manager warning: Failed to parse saved session file: Failed to open file “/var/lib/gdm3/.config/mutter/sessions/104c671ca1f3eeafe817832509765138500000059450000.ms”: No such file or directory
+Jul  5 19:29:37 nknu /usr/libexec/gdm-x-session[5944]: dbus-daemon[5944]: [session uid=128 pid=5944] Activated service 'org.freedesktop.systemd1' failed: Process org.freedesktop.systemd1 exited with status 1
+Jul  5 19:29:37 nknu gsd-sharing[6067]: Failed to StopUnit service: GDBus.Error:org.freedesktop.DBus.Error.Spawn.ChildExited: Process org.freedesktop.systemd1 exited with status 1
+Jul  5 19:29:37 nknu gsd-sharing[6067]: Failed to StopUnit service: GDBus.Error:org.freedesktop.DBus.Error.Spawn.ChildExited: Process org.freedesktop.systemd1 exited with status 1
+Jul  5 19:29:37 nknu gsd-color[6071]: failed to get edid: unable to get EDID for output
+Jul  5 19:29:37 nknu gsd-media-keys[6089]: Failed to grab accelerator for keybinding settings:playback-repeat
+Jul  5 19:29:37 nknu gsd-media-keys[6089]: Failed to grab accelerator for keybinding settings:hibernate
+Jul  5 19:29:37 nknu gsd-media-keys[6089]: Failed to grab accelerator for keybinding settings:rotate-video-lock
+Jul  5 19:29:37 nknu gsd-media-keys[6089]: Failed to grab accelerator for keybinding settings:playback-random
+Jul  5 19:29:39 nknu gnome-shell[5996]: JS ERROR: Failed to initialize fprintd service: Gio.IOErrorEnum: GDBus.Error:net.reactivated.Fprint.Error.NoSuchDevice: No devices available#012asyncCallback@resource:///org/gnome/gjs/modules/core/overrides/Gio.js:114:23
+Jul  5 19:30:02 nknu gnome-session[5945]: gnome-session-binary[5945]: GLib-CRITICAL: g_hash_table_foreach_remove_or_steal: assertion 'version == hash_table->version' failed
+Jul  5 19:30:02 nknu gnome-session-binary[5945]: GLib-CRITICAL: g_hash_table_foreach_remove_or_steal: assertion 'version == hash_table->version' failed
+Jul  5 19:30:02 nknu gnome-shell[5996]: Lost or failed to acquire name org.gnome.Mutter.ScreenCast
+Jul  5 19:30:02 nknu gnome-shell[5996]: Lost or failed to acquire name org.gnome.Mutter.RemoteDesktop
+Jul  5 19:30:03 nknu /usr/libexec/gdm-x-session[5934]: (EE) systemd-logind: failed to release device: Device not taken
+Jul  5 19:30:03 nknu /usr/libexec/gdm-x-session[5934]: (EE) systemd-logind: failed to release device: Device not taken
+Jul  5 19:30:03 nknu gdm-launch-environment]: GLib-GObject: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+Jul  5 19:30:03 nknu gdm3: Gdm: (../daemon/gdm-display.c:1260):gdm_display_dispose: runtime check failed: (priv->status != GDM_DISPLAY_MANAGED)
+Jul  5 19:31:33 nknu node[1555]: 2026-07-05T19:31:33.677+08:00 [warn]: [ 'failed to obtain token' ]
+Jul  5 19:31:33 nknu node[1555]:   AxiosError: Request failed with status code 400
+Jul  5 19:27:57 nknu systemd-udevd[521]: nvme0n1: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/nvme0n1' failed with exit code 1.
+Jul  5 19:27:57 nknu systemd-udevd[515]: nvme0n1p15: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/nvme0n1p15' failed with exit code 1.
+Jul  5 19:27:57 nknu systemd-udevd[508]: nvme0n1p13: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/nvme0n1p13' failed with exit code 1.
+Jul  5 19:27:57 nknu systemd-udevd[499]: nvme0n1p3: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/nvme0n1p3' failed with exit code 1.
+Jul  5 19:27:57 nknu systemd-udevd[526]: nvme0n1p10: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/nvme0n1p10' failed with exit code 1.
+Jul  5 19:27:57 nknu systemd-udevd[513]: nvme0n1p6: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/nvme0n1p6' failed with exit code 1.
+Jul  5 19:27:57 nknu systemd-udevd[507]: nvme0n1p7: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/nvme0n1p7' failed with exit code 1.
+Jul  5 19:27:57 nknu systemd-udevd[529]: nvme0n1p14: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/nvme0n1p14' failed with exit code 1.
+Jul  5 19:27:57 nknu systemd-udevd[517]: nvme0n1p8: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/nvme0n1p8' failed with exit code 1.
+Jul  5 19:27:57 nknu systemd-udevd[506]: nvme0n1p9: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/nvme0n1p9' failed with exit code 1.
+Jul  5 19:27:57 nknu systemd-udevd[521]: nvme0n1p1: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/nvme0n1p1' failed with exit code 1.
+Jul  5 19:27:57 nknu systemd-udevd[501]: nvme0n1p12: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/nvme0n1p12' failed with exit code 1.
+Jul  5 19:27:57 nknu systemd-udevd[525]: nvme0n1p4: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/nvme0n1p4' failed with exit code 1.
+Jul  5 19:27:57 nknu systemd-udevd[527]: nvme0n1p11: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/nvme0n1p11' failed with exit code 1.
+Jul  5 19:27:57 nknu systemd-udevd[503]: nvme0n1p5: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/nvme0n1p5' failed with exit code 1.
+Jul  5 19:27:57 nknu systemd-udevd[528]: nvme0n1p2: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/nvme0n1p2' failed with exit code 1.
+Jul  5 19:27:57 nknu systemd[1]: Dependency failed for SSSD NSS Service responder socket.
+Jul  5 19:27:57 nknu systemd[1]: sssd-nss.socket: Job sssd-nss.socket/start failed with result 'dependency'.
+Jul  5 19:27:57 nknu systemd[1]: Dependency failed for SSSD AutoFS Service responder socket.
+Jul  5 19:27:57 nknu systemd[1]: sssd-autofs.socket: Job sssd-autofs.socket/start failed with result 'dependency'.
+Jul  5 19:27:57 nknu systemd[1]: Dependency failed for SSSD PAC Service responder socket.
+Jul  5 19:27:57 nknu systemd[1]: sssd-pac.socket: Job sssd-pac.socket/start failed with result 'dependency'.
+Jul  5 19:27:57 nknu systemd[1]: Dependency failed for SSSD PAM Service responder private socket.
+Jul  5 19:27:57 nknu systemd[1]: Dependency failed for SSSD PAM Service responder socket.
+Jul  5 19:27:57 nknu systemd[1]: sssd-pam.socket: Job sssd-pam.socket/start failed with result 'dependency'.
+Jul  5 19:27:57 nknu systemd[1]: sssd-pam-priv.socket: Job sssd-pam-priv.socket/start failed with result 'dependency'.
+Jul  5 19:27:57 nknu systemd[1]: Dependency failed for SSSD SSH Service responder socket.
+Jul  5 19:27:57 nknu systemd[1]: sssd-ssh.socket: Job sssd-ssh.socket/start failed with result 'dependency'.
+Jul  5 19:27:57 nknu systemd[1]: Dependency failed for SSSD Sudo Service responder socket.
+Jul  5 19:27:57 nknu systemd[1]: sssd-sudo.socket: Job sssd-sudo.socket/start failed with result 'dependency'.
+Jul  5 19:27:57 nknu kernel: [    2.253667] tegra-vic 15340000.vic: failed to init devfreq: -22
+Jul  5 19:27:57 nknu kernel: [    2.253726] tegra-vic: probe of 15340000.vic failed with error -22
+Jul  5 19:27:57 nknu kernel: [    2.259255] tegra-nvdec 15480000.nvdec: failed to init devfreq: -22
+Jul  5 19:27:57 nknu kernel: [    2.259292] tegra-nvdec: probe of 15480000.nvdec failed with error -22
+Jul  5 19:27:57 nknu kernel: [    2.264256] tegra-nvenc 154c0000.nvenc: failed to init devfreq: -22
+
+=== gdm3 greeter logs ===
+總用量 8
+drwx--x--x 2 root     135 4096  1月 24  2025 .
+drwxrwxr-x 6 root lpadmin 4096  7月  5 19:28 ..
+
+=== Xorg log (gdm) ===
+--- /mnt/jetson-ssd/var/log/Xorg.0.log: (EE)/(WW)/NVIDIA lines ---
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[    20.130] (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+[    20.131] (WW) The directory "/usr/share/fonts/X11/100dpi/" does not exist.
+[    20.131] (WW) The directory "/usr/share/fonts/X11/75dpi/" does not exist.
+[    20.131] (WW) The directory "/usr/share/fonts/X11/100dpi" does not exist.
+[    20.131] (WW) The directory "/usr/share/fonts/X11/75dpi" does not exist.
+[    20.137] (WW) "dri" will not be loaded unless you've specified it to be loaded elsewhere.
+[    20.147] (II) Module nvidia: vendor="NVIDIA Corporation"
+[    20.148] (II) NVIDIA dlloader X Driver  540.4.0  Release Build  (bugfix_main)  (buildbrain@mobile-u64-6354-d6000)  Thu Sep 18 15:19:04 PDT 2025
+[    20.148] (II) NVIDIA Unified Driver for all Supported NVIDIA GPUs
+[    20.148] (WW) Falling back to old probe method for NVIDIA
+[    20.151] (WW) Falling back to old probe method for NVIDIA
+[    20.151] (EE) No devices detected.
+[    20.153] (II) NVIDIA dlloader X Driver  540.4.0  Release Build  (bugfix_main)  (buildbrain@mobile-u64-6354-d6000)  Thu Sep 18 15:19:04 PDT 2025
+[    20.153] (II) NVIDIA Unified Driver for all Supported NVIDIA GPUs
+[    20.153] (WW) Falling back to old probe method for NVIDIA
+[    20.153] (WW) Falling back to old probe method for modesetting
+[    20.153] (EE) open /dev/dri/card0: No such file or directory
+[    20.153] (WW) Falling back to old probe method for fbdev
+[    20.381] (II) config/udev: Adding input device NVIDIA Jetson Orin NX HDA HDMI/DP,pcm=7 (/dev/input/event9)
+[    20.382] (II) config/udev: Adding input device NVIDIA Jetson Orin NX HDA HDMI/DP,pcm=8 (/dev/input/event10)
+[    20.383] (II) config/udev: Adding input device NVIDIA Jetson Orin NX HDA HDMI/DP,pcm=9 (/dev/input/event11)
+[    20.384] (II) config/udev: Adding input device NVIDIA Jetson Orin NX HDA HDMI/DP,pcm=3 (/dev/input/event8)
+--- /mnt/jetson-ssd/var/log/Xorg.1.log: (EE)/(WW)/NVIDIA lines ---
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[   617.656] (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+[   617.656] (WW) The directory "/usr/share/fonts/X11/100dpi/" does not exist.
+[   617.656] (WW) The directory "/usr/share/fonts/X11/75dpi/" does not exist.
+[   617.656] (WW) The directory "/usr/share/fonts/X11/100dpi" does not exist.
+[   617.656] (WW) The directory "/usr/share/fonts/X11/75dpi" does not exist.
+[   617.660] (WW) "dri" will not be loaded unless you've specified it to be loaded elsewhere.
+[   617.663] (II) Module nvidia: vendor="NVIDIA Corporation"
+[   617.663] (II) NVIDIA dlloader X Driver  540.4.0  Release Build  (bugfix_main)  (buildbrain@mobile-u64-6354-d6000)  Thu Sep 18 15:19:04 PDT 2025
+[   617.663] (II) NVIDIA Unified Driver for all Supported NVIDIA GPUs
+[   617.663] (WW) Falling back to old probe method for NVIDIA
+[   617.664] (WW) Falling back to old probe method for NVIDIA
+[   617.664] (EE) No devices detected.
+[   617.665] (II) NVIDIA dlloader X Driver  540.4.0  Release Build  (bugfix_main)  (buildbrain@mobile-u64-6354-d6000)  Thu Sep 18 15:19:04 PDT 2025
+[   617.665] (II) NVIDIA Unified Driver for all Supported NVIDIA GPUs
+[   617.665] (WW) Falling back to old probe method for NVIDIA
+[   617.665] (WW) Falling back to old probe method for modesetting
+[   617.665] (EE) open /dev/dri/card0: No such file or directory
+[   617.665] (WW) Falling back to old probe method for fbdev
+[   617.745] (II) config/udev: Adding input device NVIDIA Jetson Orin NX HDA HDMI/DP,pcm=7 (/dev/input/event9)
+[   617.746] (II) config/udev: Adding input device NVIDIA Jetson Orin NX HDA HDMI/DP,pcm=8 (/dev/input/event10)
+[   617.746] (II) config/udev: Adding input device NVIDIA Jetson Orin NX HDA HDMI/DP,pcm=9 (/dev/input/event11)
+[   617.746] (II) config/udev: Adding input device NVIDIA Jetson Orin NX HDA HDMI/DP,pcm=3 (/dev/input/event8)
+[   645.236] (EE) systemd-logind: failed to release device: Device not taken
+[   645.288] (EE) systemd-logind: failed to release device: Device not taken
+
+=== Xorg log (user session, autologin user jetson) ===
+
+=== auth.log tail (PAM health check) ===
+Jul  5 19:27:41 nknu systemd-logind[895]: Session c2 logged out. Waiting for processes to exit.
+Jul  5 19:27:41 nknu systemd-logind[895]: Removed session c2.
+Jul  5 19:29:15 nknu systemd-logind[895]: Watching system buttons on /dev/input/event16 (COOLER MASTER CK550 V2 Gaming Mechanical Keyboard System Control)
+Jul  5 19:29:15 nknu systemd-logind[895]: Watching system buttons on /dev/input/event15 (COOLER MASTER CK550 V2 Gaming Mechanical Keyboard)
+Jul  5 19:29:15 nknu systemd-logind[895]: Watching system buttons on /dev/input/event13 (Logitech G300s Optical Gaming Mouse Keyboard)
+Jul  5 19:29:15 nknu systemd-logind[895]: Watching system buttons on /dev/input/event19 (COOLER MASTER CK550 V2 Gaming Mechanical Keyboard)
+Jul  5 19:29:16 nknu systemd-logind[895]: Watching system buttons on /dev/input/event20 (Generic BenQ EX2710U Consumer Control)
+Jul  5 19:29:35 nknu gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=128) by (uid=0)
+Jul  5 19:29:35 nknu systemd-logind[895]: New session c3 of user gdm.
+Jul  5 19:29:35 nknu systemd: pam_unix(systemd-user:session): session opened for user gdm(uid=128) by (uid=0)
+Jul  5 19:29:37 nknu polkitd(authority=local): Registered Authentication Agent for unix-session:c3 (system bus name :1.195 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Jul  5 19:30:01 nknu CRON[6265]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul  5 19:30:01 nknu CRON[6265]: pam_unix(cron:session): session closed for user root
+Jul  5 19:30:02 nknu polkitd(authority=local): Unregistered Authentication Agent for unix-session:c3 (system bus name :1.195, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+Jul  5 19:30:03 nknu gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+Jul  5 19:30:03 nknu systemd-logind[895]: Session c3 logged out. Waiting for processes to exit.
+Jul  5 19:30:03 nknu systemd-logind[895]: Removed session c3.
+Jul  5 19:27:57 nknu systemd-logind[901]: Watching system buttons on /dev/input/event4 (ASUSTeK ROG GLADIUS III System Control)
+Jul  5 19:27:57 nknu systemd-logind[901]: Watching system buttons on /dev/input/event6 (ASUSTeK ROG GLADIUS III Keyboard)
+Jul  5 19:27:57 nknu systemd-logind[901]: Watching system buttons on /dev/input/event7 (Apple Inc. Magic Keyboard)
+Jul  5 19:27:57 nknu systemd-logind[901]: Watching system buttons on /dev/input/event0 (gpio-keys)
+Jul  5 19:27:57 nknu systemd-logind[901]: New seat seat0.
+Jul  5 19:27:57 nknu systemd: pam_unix(systemd-user:session): session opened for user jetson(uid=1000) by (uid=0)
+Jul  5 19:27:57 nknu sshd[1383]: Server listening on 0.0.0.0 port 22.
+Jul  5 19:27:57 nknu sshd[1383]: Server listening on :: port 22.
+Jul  5 19:28:07 nknu gdm-autologin]: gkr-pam: no password is available for user
+Jul  5 19:28:07 nknu gdm-autologin]: pam_unix(gdm-autologin:session): session opened for user jetson(uid=1000) by (uid=0)
+Jul  5 19:28:07 nknu systemd-logind[901]: New session 2 of user jetson.
+Jul  5 19:28:07 nknu gdm-autologin]: gkr-pam: gnome-keyring-daemon started properly
+Jul  5 19:28:09 nknu gnome-keyring-daemon[2432]: The Secret Service was already initialized
+Jul  5 19:28:09 nknu gnome-keyring-daemon[2432]: The SSH agent was already initialized
+Jul  5 19:28:09 nknu gnome-keyring-daemon[2432]: The PKCS#11 component was already initialized
+Jul  5 19:28:10 nknu polkitd(authority=local): Registered Authentication Agent for unix-session:2 (system bus name :1.65 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Jul  5 19:28:13 nknu PackageKit: uid 1000 is trying to obtain org.freedesktop.packagekit.system-sources-refresh auth (only_trusted:0)
+Jul  5 19:28:13 nknu PackageKit: uid 1000 obtained auth for org.freedesktop.packagekit.system-sources-refresh
+Jul  5 19:34:31 nknu CRON[4432]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul  5 19:34:31 nknu CRON[4432]: pam_unix(cron:session): session closed for user root
+Jul  5 19:35:13 nknu pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by (uid=1000)
+Jul  5 19:35:13 nknu pkexec[4926]: jetson: Executing command [USER=root] [TTY=unknown] [CWD=/home/jetson] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+                                                             
+=== display module files present? ===
+總用量 24
+drwxr-xr-x  6 root root 4096  1月 24  2025 .
+drwxr-xr-x 26 root root 4096  1月 24  2025 ..
+drwxr-xr-x  3 root root 4096  1月 24  2025 drm
+drwxr-xr-x  2 root root 4096  7月  5 10:05 host1x
+drwxr-xr-x  2 root root 4096  7月  5 10:05 host1x-fence
+drwxr-xr-x  2 root root 4096  7月  5 10:05 host1x-nvhost
+--- modules.dep entries ---
+updates/nvgpu.ko: updates/drivers/video/tegra/nvmap/nvmap.ko updates/drivers/misc/nvsciipc/nvsciipc.ko updates/drivers/gpu/host1x/host1x.ko updates/drivers/platform/tegra/mc-utils/mc-utils.ko
+updates/opensrc-disp/nvidia-modeset.ko: updates/opensrc-disp/nvidia.ko updates/drivers/platform/tegra/dce/tegra-dce.ko updates/drivers/video/tegra/tsec/tsecriscv.ko updates/drivers/gpu/host1x-nvhost/host1x-nvhost.ko updates/drivers/gpu/host1x/host1x.ko updates/drivers/platform/tegra/mc-utils/mc-utils.ko kernel/drivers/gpu/drm/drm.ko
+updates/opensrc-disp/nvidia-drm.ko: updates/opensrc-disp/nvidia-modeset.ko updates/opensrc-disp/nvidia.ko updates/drivers/platform/tegra/dce/tegra-dce.ko updates/drivers/video/tegra/tsec/tsecriscv.ko updates/drivers/gpu/host1x-nvhost/host1x-nvhost.ko updates/drivers/gpu/host1x/host1x.ko updates/drivers/platform/tegra/mc-utils/mc-utils.ko kernel/drivers/gpu/drm/drm_kms_helper.ko kernel/drivers/gpu/drm/drm.ko
+
+=== done ===

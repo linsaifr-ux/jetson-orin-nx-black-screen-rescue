@@ -1,0 +1,13 @@
+# NVIDIA L4T BSP (24 GB, downloaded from developer.nvidia.com — not ours to redistribute)
+Linux_for_Tegra/
+
+# Prepared commit message (used with `git commit -F`, not part of the repo)
+COMMIT_MESSAGE.txt
+
+# Claude Code local (machine-specific) settings
+.claude/settings.local.json
+
+# Editor / OS noise
+*~
+*.swp
+.DS_Store

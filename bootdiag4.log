@@ -1,0 +1,250 @@
+=== bootdiag4 2026-07-05T20:02:45+08:00 ===
+
+=== WORKING boot (Jul 4 19:51): 80 lines BEFORE + 20 AFTER 'nvidia-modeset: Loading' ===
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (==) Automatically adding devices
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (==) Automatically enabling devices
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (==) Automatically adding GPU devices
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (==) Automatically binding GPU devices
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (==) Max clients allowed: 256, resource mask: 0x1fffff
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: #011Entry deleted from font path.
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (WW) The directory "/usr/share/fonts/X11/100dpi/" does not exist.
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: #011Entry deleted from font path.
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (WW) The directory "/usr/share/fonts/X11/75dpi/" does not exist.
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: #011Entry deleted from font path.
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (WW) The directory "/usr/share/fonts/X11/100dpi" does not exist.
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: #011Entry deleted from font path.
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (WW) The directory "/usr/share/fonts/X11/75dpi" does not exist.
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: #011Entry deleted from font path.
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (==) FontPath set to:
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: #011/usr/share/fonts/X11/misc,
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: #011/usr/share/fonts/X11/Type1,
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: #011built-ins
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (==) ModulePath set to "/usr/lib/xorg/modules"
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (II) The server relies on udev to provide the list of input devices.
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: #011If no devices become available, reconfigure udev or disable AutoAddDevices.
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (II) Loader magic: 0xaaaacf612010
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (II) Module ABI versions:
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: #011X.Org ANSI C Emulation: 0.4
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: #011X.Org Video Driver: 25.2
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: #011X.Org XInput driver : 24.4
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: #011X.Org Server Extension : 10.0
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (++) using VT number 2
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (II) systemd-logind: took control of session /org/freedesktop/login1/session/_32
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (II) xfree86: Adding drm device (/dev/dri/card0)
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (II) Platform probe for /sys/devices/platform/bus@0/13e00000.host1x/drm/drm/card0
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (II) systemd-logind: got fd for /dev/dri/card0 226:0 fd 12 paused 0
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (II) no primary bus or device found
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: #011falling back to /sys/devices/platform/bus@0/13e00000.host1x/drm/drm/card0
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (WW) "dri" will not be loaded unless you've specified it to be loaded elsewhere.
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (II) "glx" will be loaded by default.
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (II) LoadModule: "extmod"
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (II) Module "extmod" already built-in
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (II) LoadModule: "glx"
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+Jul  4 19:51:21 nknu rtkit-daemon[1542]: Supervising 3 threads of 3 processes of 1 users.
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (II) Module glx: vendor="X.Org Foundation"
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: #011compiled for 1.21.1.4, module version = 1.0.0
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: #011ABI class: X.Org Server Extension, version 10.0
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (II) LoadModule: "nvidia"
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (II) Loading /usr/lib/xorg/modules/drivers/nvidia_drv.so
+Jul  4 19:51:21 nknu rtkit-daemon[1542]: Successfully made thread 1567 of process 1465 owned by '1000' RT at priority 20.
+Jul  4 19:51:21 nknu rtkit-daemon[1542]: Supervising 4 threads of 3 processes of 1 users.
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (II) Module nvidia: vendor="NVIDIA Corporation"
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: #011compiled for 1.6.99.901, module version = 1.0.0
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: #011Module class: X.Org Video Driver
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (II) NVIDIA dlloader X Driver  540.4.0  Release Build  (bugfix_main)  (buildbrain@mobile-u64-6336-d8000)  Tue Jan  7 17:24:02 PST 2025
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (II) NVIDIA Unified Driver for all Supported NVIDIA GPUs
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (II) systemd-logind: releasing fd for 226:0
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (II) Loading sub module "fb"
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (II) LoadModule: "fb"
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (II) Module "fb" already built-in
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (II) Loading sub module "wfb"
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (II) LoadModule: "wfb"
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (II) Loading /usr/lib/xorg/modules/libwfb.so
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (II) Module wfb: vendor="X.Org Foundation"
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: #011compiled for 1.21.1.4, module version = 1.0.0
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: #011ABI class: X.Org ANSI C Emulation, version 0.4
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (II) NVIDIA(0): Creating default Display subsection in Screen section
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: #011"Default Screen Section" for depth/fbbpp 24/32
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (==) NVIDIA(0): Depth 24, (==) framebuffer bpp 32
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (==) NVIDIA(0): RGB weight 888
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (==) NVIDIA(0): Default visual is TrueColor
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (==) NVIDIA(0): Using gamma correction (1.0, 1.0, 1.0)
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (**) NVIDIA(0): Option "AllowEmptyInitialConfiguration" "true"
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (**) NVIDIA(0): Enabling 2D acceleration
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (II) Loading sub module "glxserver_nvidia"
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (II) LoadModule: "glxserver_nvidia"
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (II) Loading /usr/lib/xorg/modules/extensions/libglxserver_nvidia.so
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (II) Module glxserver_nvidia: vendor="NVIDIA Corporation"
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: #011compiled for 1.6.99.901, module version = 1.0.0
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: #011Module class: X.Org Server Extension
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (II) NVIDIA GLX Module  540.4.0  Release Build  (bugfix_main)  (buildbrain@mobile-u64-6336-d8000)  Tue Jan  7 17:23:04 PST 2025
+Jul  4 19:51:21 nknu /usr/libexec/gdm-x-session[1560]: (II) NVIDIA: The X server supports PRIME Render Offload.
+Jul  4 19:51:21 nknu kernel: [   13.240229] nvidia-modeset: Loading NVIDIA UNIX Open Kernel Mode Setting Driver for aarch64  540.4.0  Release Build  (buildbrain@mobile-u64-6336-d8000)  Tue Jan  7 17:35:14 PST 2025
+Jul  4 19:51:21 nknu kernel: [   13.247733] [drm] [nvidia-drm] [GPU ID 0x00020000] Loading driver
+Jul  4 19:51:21 nknu dockerd[1270]: time="2026-07-04T19:51:21.576485968+08:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Jul  4 19:51:21 nknu systemd[1]: systemd-rfkill.service: Deactivated successfully.
+Jul  4 19:51:21 nknu ModemManager[820]: <info>  [base-manager] couldn't check support for device '/sys/devices/platform/bus@0/3610000.usb/usb1/1-2/1-2.2': not supported by any plugin
+Jul  4 19:51:21 nknu ModemManager[820]: <info>  [base-manager] couldn't check support for device '/sys/devices/platform/bus@0/140a0000.pcie/pci0008:00/0008:00:00.0/0008:01:00.0': not supported by any plugin
+Jul  4 19:51:21 nknu ModemManager[820]: <info>  [base-manager] couldn't check support for device '/sys/devices/platform/bus@0/14100000.pcie/pci0001:00/0001:00:00.0/0001:01:00.0': not supported by any plugin
+Jul  4 19:51:21 nknu ModemManager[820]: <info>  [base-manager] couldn't check support for device '/sys/devices/platform/bus@0/c310000.mttcan': not supported by any plugin
+Jul  4 19:51:21 nknu ModemManager[820]: <info>  [base-manager] couldn't check support for device '/sys/devices/platform/bus@0/3550000.usb': not supported by any plugin
+Jul  4 19:51:21 nknu dockerd[1270]: time="2026-07-04T19:51:21.649263600+08:00" level=info msg="Loading containers: start."
+Jul  4 19:51:21 nknu jupyter-lab[966]: [I 2026-07-04 19:51:21.703 ServerApp] jupyter_lsp | extension was successfully linked.
+Jul  4 19:51:21 nknu jupyter-lab[966]: [I 2026-07-04 19:51:21.710 ServerApp] jupyter_server_terminals | extension was successfully linked.
+Jul  4 19:51:21 nknu jupyter-lab[966]: [I 2026-07-04 19:51:21.719 ServerApp] jupyterlab | extension was successfully linked.
+Jul  4 19:51:21 nknu dockerd[1270]: time="2026-07-04T19:51:21.779385360+08:00" level=warning msg="Could not load necessary modules for IPSEC rules: protocol not supported"
+Jul  4 19:51:21 nknu NetworkManager[658]: <info>  [1783165881.7861] manager: (docker0): new Bridge device (/org/freedesktop/NetworkManager/Devices/9)
+Jul  4 19:51:21 nknu rtkit-daemon[1542]: Supervising 4 threads of 3 processes of 1 users.
+Jul  4 19:51:21 nknu rtkit-daemon[1542]: Successfully made thread 1690 of process 1469 owned by '1000' RT at priority 5.
+Jul  4 19:51:21 nknu rtkit-daemon[1542]: Supervising 5 threads of 3 processes of 1 users.
+Jul  4 19:51:21 nknu avahi-daemon[655]: Joining mDNS multicast group on interface docker0.IPv4 with address 172.17.0.1.
+Jul  4 19:51:21 nknu NetworkManager[658]: <info>  [1783165881.8418] device (docker0): state change: unmanaged -> unavailable (reason 'connection-assumed', sys-iface-state: 'external')
+Jul  4 19:51:21 nknu NetworkManager[658]: <info>  [1783165881.8427] device (docker0): state change: unavailable -> disconnected (reason 'connection-assumed', sys-iface-state: 'external')
+
+=== FAILING boot: systemd unit activity 19:27:57-19:28:30 ===
+Jul  5 19:27:57 nknu systemd[1]: Finished Set the console keyboard layout.
+Jul  5 19:27:57 nknu systemd[1]: Finished Create List of Static Device Nodes.
+Jul  5 19:27:57 nknu systemd[1]: Finished Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling.
+Jul  5 19:27:57 nknu systemd[1]: Finished Load Kernel Module configfs.
+Jul  5 19:27:57 nknu systemd[1]: Finished Load Kernel Module drm.
+Jul  5 19:27:57 nknu systemd[1]: Finished Load Kernel Module efi_pstore.
+Jul  5 19:27:57 nknu systemd[1]: Finished Load Kernel Module fuse.
+Jul  5 19:27:57 nknu systemd[1]: Finished NVIDIA specific first-boot udev script.
+Jul  5 19:27:57 nknu systemd[1]: Finished Load Kernel Modules.
+Jul  5 19:27:57 nknu systemd[1]: Finished Remount Root and Kernel File Systems.
+Jul  5 19:27:57 nknu systemd[1]: Starting OP-TEE Client Supplicant...
+Jul  5 19:27:57 nknu systemd[1]: Starting Flush Journal to Persistent Storage...
+Jul  5 19:27:57 nknu systemd[1]: Starting Load/Save Random Seed...
+Jul  5 19:27:57 nknu systemd[1]: Starting Apply Kernel Variables...
+Jul  5 19:27:57 nknu systemd[1]: Starting Create System Users...
+Jul  5 19:27:57 nknu systemd[1]: Finished Flush Journal to Persistent Storage.
+Jul  5 19:27:57 nknu systemd[1]: Finished Load/Save Random Seed.
+Jul  5 19:27:57 nknu systemd[1]: Finished Apply Kernel Variables.
+Jul  5 19:27:57 nknu systemd[1]: Finished Create System Users.
+Jul  5 19:27:57 nknu systemd[1]: Starting Create Static Device Nodes in /dev...
+Jul  5 19:27:57 nknu systemd[1]: Finished Create Static Device Nodes in /dev.
+Jul  5 19:27:57 nknu systemd[1]: Starting Rule-based Manager for Device Events and Files...
+Jul  5 19:27:57 nknu systemd[1]: Finished Coldplug All udev Devices.
+Jul  5 19:27:57 nknu systemd[1]: Started Rule-based Manager for Device Events and Files.
+Jul  5 19:27:57 nknu systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+Jul  5 19:27:57 nknu systemd[1]: Started OP-TEE Client Supplicant.
+Jul  5 19:27:57 nknu systemd[1]: Starting File System Check on /dev/disk/by-uuid/0D91-EE13...
+Jul  5 19:27:57 nknu systemd[1]: Started File System Check Daemon to report status.
+Jul  5 19:27:57 nknu systemd[1]: Finished File System Check on /dev/disk/by-uuid/0D91-EE13.
+Jul  5 19:27:57 nknu systemd[1]: Starting Enable support for additional executable binary formats...
+Jul  5 19:27:57 nknu systemd[1]: Starting Set console font and keymap...
+Jul  5 19:27:57 nknu systemd[1]: Starting Tell Plymouth To Write Out Runtime Data...
+Jul  5 19:27:57 nknu systemd[1]: Starting Set Up Additional Binary Formats...
+Jul  5 19:27:57 nknu systemd[1]: Starting Create Volatile Files and Directories...
+Jul  5 19:27:57 nknu systemd[1]: Starting Uncomplicated firewall...
+Jul  5 19:27:57 nknu systemd[1]: Finished Set console font and keymap.
+Jul  5 19:27:57 nknu systemd[1]: Finished Tell Plymouth To Write Out Runtime Data.
+Jul  5 19:27:57 nknu systemd[1]: Finished Uncomplicated firewall.
+Jul  5 19:27:57 nknu systemd[1]: Starting Load/Save RF Kill Switch Status...
+Jul  5 19:27:57 nknu systemd[1]: Finished Create Volatile Files and Directories.
+Jul  5 19:27:57 nknu systemd[1]: Started Entropy Daemon based on the HAVEGE algorithm.
+Jul  5 19:27:57 nknu systemd[1]: Starting RPC bind portmap service...
+Jul  5 19:27:57 nknu systemd[1]: Starting Network Name Resolution...
+Jul  5 19:27:57 nknu systemd[1]: Starting Network Time Synchronization...
+Jul  5 19:27:57 nknu systemd[1]: Starting Record System Boot/Shutdown in UTMP...
+Jul  5 19:27:57 nknu systemd[1]: Started RPC bind portmap service.
+Jul  5 19:27:57 nknu systemd[1]: Finished Enable support for additional executable binary formats.
+Jul  5 19:27:57 nknu systemd[1]: Finished Set Up Additional Binary Formats.
+Jul  5 19:27:57 nknu systemd[1]: Started Network Time Synchronization.
+Jul  5 19:27:57 nknu systemd[1]: Started Network Name Resolution.
+Jul  5 19:27:57 nknu systemd[1]: Starting Load Kernel Module efi_pstore...
+Jul  5 19:27:57 nknu systemd[1]: Finished Load Kernel Module efi_pstore.
+Jul  5 19:27:57 nknu systemd[1]: Started Load/Save RF Kill Switch Status.
+Jul  5 19:27:57 nknu systemd[1]: Starting Load Kernel Module efi_pstore...
+Jul  5 19:27:57 nknu systemd[1]: Finished Load Kernel Module efi_pstore.
+Jul  5 19:27:57 nknu systemd[1]: Finished Record System Boot/Shutdown in UTMP.
+Jul  5 19:27:57 nknu systemd[1]: Started Process error reports when automatic reporting is enabled (file watch).
+Jul  5 19:27:57 nknu systemd[1]: Started resolvconf-pull-resolved.path.
+Jul  5 19:27:57 nknu systemd[1]: Started Trigger anacron every hour.
+Jul  5 19:27:57 nknu systemd[1]: Started Process error reports when automatic reporting is enabled (timer based).
+Jul  5 19:27:57 nknu systemd[1]: Started Daily apt download activities.
+Jul  5 19:27:57 nknu systemd[1]: Started Daily apt upgrade and clean activities.
+Jul  5 19:27:57 nknu systemd[1]: Started Daily dpkg database backup timer.
+Jul  5 19:27:57 nknu systemd[1]: Started Periodic ext4 Online Metadata Check for All Filesystems.
+Jul  5 19:27:57 nknu systemd[1]: Started Discard unused blocks once a week.
+Jul  5 19:27:57 nknu systemd[1]: Started Refresh fwupd metadata regularly.
+Jul  5 19:27:57 nknu systemd[1]: Started Daily rotation of log files.
+Jul  5 19:27:57 nknu systemd[1]: Started Daily man-db regeneration.
+Jul  5 19:27:57 nknu systemd[1]: Started Message of the Day.
+Jul  5 19:27:57 nknu systemd[1]: Started Daily Cleanup of Temporary Directories.
+Jul  5 19:27:57 nknu systemd[1]: Starting Docker Socket for the API...
+Jul  5 19:27:57 nknu systemd[1]: Starting Socket activation for snappy daemon...
+Jul  5 19:27:57 nknu systemd[1]: Started Run anacron jobs.
+Jul  5 19:27:57 nknu systemd[1]: Starting Avahi mDNS/DNS-SD Stack...
+Jul  5 19:27:57 nknu systemd[1]: Starting Bluetooth service...
+Jul  5 19:27:57 nknu systemd[1]: Started D-Bus System Message Bus.
+Jul  5 19:27:57 nknu systemd[1]: Starting Network Manager...
+Jul  5 19:27:57 nknu systemd[1]: Started Save initial kernel messages after boot.
+Jul  5 19:27:57 nknu systemd[1]: Starting Remove Stale Online ext4 Metadata Check Snapshots...
+Jul  5 19:27:57 nknu systemd[1]: Starting LSB: Execute the kexec -e command to reboot system...
+Jul  5 19:27:57 nknu systemd[1]: Started Checking root filesystem boot successful.
+Jul  5 19:27:57 nknu systemd[1]: Starting LSB: BSD lpr/lpd line printer spooling system...
+Jul  5 19:27:57 nknu systemd[1]: Starting Dispatcher daemon for systemd-networkd...
+Jul  5 19:27:57 nknu systemd[1]: Starting Configure USB flashing port for device mode...
+Jul  5 19:27:57 nknu systemd[1]: Starting NVIDIA specific early first-boot script...
+Jul  5 19:27:57 nknu systemd[1]: Started service for managing PVA allowlists.
+Jul  5 19:27:57 nknu systemd[1]: Starting NVIDIA specific power script...
+Jul  5 19:27:57 nknu systemd[1]: Started NVIDIA weston service.
+Jul  5 19:27:57 nknu systemd[1]: Starting Authorization Manager...
+Jul  5 19:27:57 nknu systemd[1]: Starting Power Profiles daemon...
+Jul  5 19:27:57 nknu systemd[1]: Starting resolvconf-pull-resolved.service...
+Jul  5 19:27:57 nknu systemd[1]: Starting System Logging Service...
+Jul  5 19:27:57 nknu systemd[1]: Started Seat management daemon.
+Jul  5 19:27:57 nknu systemd[1]: Starting Wait until snapd is fully seeded...
+Jul  5 19:27:57 nknu systemd[1]: Starting Snap Daemon...
+Jul  5 19:27:57 nknu systemd[1]: Dependency failed for SSSD NSS Service responder socket.
+Jul  5 19:27:57 nknu systemd[1]: Dependency failed for SSSD AutoFS Service responder socket.
+Jul  5 19:27:57 nknu systemd[1]: Dependency failed for SSSD PAC Service responder socket.
+Jul  5 19:27:57 nknu systemd[1]: Dependency failed for SSSD PAM Service responder private socket.
+Jul  5 19:27:57 nknu systemd[1]: Dependency failed for SSSD PAM Service responder socket.
+Jul  5 19:27:57 nknu systemd[1]: Dependency failed for SSSD SSH Service responder socket.
+Jul  5 19:27:57 nknu systemd[1]: Dependency failed for SSSD Sudo Service responder socket.
+Jul  5 19:27:57 nknu systemd[1]: Starting Accounts Service...
+Jul  5 19:27:57 nknu systemd[1]: Starting Switcheroo Control Proxy service...
+Jul  5 19:27:57 nknu systemd[1]: Starting User Login Management...
+Jul  5 19:27:57 nknu systemd[1]: Starting Disk Manager...
+Jul  5 19:27:57 nknu systemd[1]: Starting WPA supplicant...
+Jul  5 19:27:57 nknu systemd[1]: Finished Remove Stale Online ext4 Metadata Check Snapshots.
+Jul  5 19:27:57 nknu systemd[1]: Started LSB: BSD lpr/lpd line printer spooling system.
+Jul  5 19:27:57 nknu systemd[1]: Finished NVIDIA specific early first-boot script.
+Jul  5 19:27:57 nknu systemd[1]: Started System Logging Service.
+Jul  5 19:27:57 nknu systemd[1]: Started Power Profiles daemon.
+Jul  5 19:27:57 nknu systemd[1]: Started Authorization Manager.
+Jul  5 19:27:57 nknu kernel: [    4.971868] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+Jul  5 19:27:57 nknu kernel: [    5.442757] systemd[1]: Starting Journal Service...
+Jul  5 19:27:57 nknu kernel: [    5.444310] systemd[1]: Finished Availability of block devices.
+Jul  5 19:27:57 nknu kernel: [    5.452801] systemd[1]: Starting Set the console keyboard layout...
+Jul  5 19:27:57 nknu kernel: [    5.455547] systemd[1]: Starting Create List of Static Device Nodes...
+Jul  5 19:27:57 nknu kernel: [    5.466297] systemd[1]: Starting Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+Jul  5 19:27:57 nknu kernel: [    5.469137] systemd[1]: Starting Load Kernel Module configfs...
+
+=== FAILING boot: nvpower / nvpmodel / nvphs details ===
+Jul  5 19:27:57 nknu nvpower.sh[818]: nvpower.sh - WARNING: /sys/class/devfreq/*/available_governors not found
+Jul  5 19:27:57 nknu nvpower.sh[954]: tee: '/sys/kernel/debug/tegra-host1x/actmon/*/sample_period': No such file or directory
+Jul  5 19:27:57 nknu nvpower.sh[958]: tee: '/sys/kernel/debug/tegra-host1x/actmon/*/module0/consec_upper_num': No such file or directory
+Jul  5 19:27:57 nknu nvpower.sh[959]: tee: '/sys/kernel/debug/tegra-host1x/actmon/*/module0/consec_lower_num': No such file or directory
+Jul  5 19:27:57 nknu nvpower.sh[961]: tee: '/sys/kernel/debug/tegra-host1x/actmon/*/module0/k': No such file or directory
+Jul  5 19:27:57 nknu systemd[1]: nvpower.service: Main process exited, code=exited, status=1/FAILURE
+Jul  5 19:27:57 nknu systemd[1]: nvpower.service: Failed with result 'exit-code'.
+Jul  5 19:27:57 nknu systemd[1]: Dependency failed for nvpmodel service.
+Jul  5 19:27:57 nknu systemd[1]: nvpmodel.service: Job nvpmodel.service/start failed with result 'dependency'.
+Jul  5 19:28:03 nknu jtop[2165]: [INFO] jtop.core.nvpmodel - nvpmodel running in [0]MAXN_SUPER - Default: 4
+
+=== FAILING boot: any modprobe/insmod/udevd errors whole window ===
+Jul  5 19:27:57 nknu systemd[1]: modprobe@configfs.service: Deactivated successfully.
+Jul  5 19:27:57 nknu systemd[1]: modprobe@drm.service: Deactivated successfully.
+Jul  5 19:27:57 nknu systemd[1]: modprobe@efi_pstore.service: Deactivated successfully.
+Jul  5 19:27:57 nknu systemd[1]: modprobe@fuse.service: Deactivated successfully.
+Jul  5 19:27:57 nknu systemd[1]: modprobe@efi_pstore.service: Deactivated successfully.
+Jul  5 19:27:57 nknu systemd[1]: modprobe@efi_pstore.service: Deactivated successfully.
+Jul  5 19:27:57 nknu kernel: [    4.679565] systemd[1]: Created slice Slice /system/modprobe.
+Jul  5 19:27:57 nknu containerd[1136]: time="2026-07-05T19:27:57.663983968+08:00" level=info msg="skip loading plugin" error="EROFS unsupported, please `modprobe erofs`: skip plugin" id=io.containerd.snapshotter.v1.erofs type=io.containerd.snapshotter.v1
+
+=== done ===
